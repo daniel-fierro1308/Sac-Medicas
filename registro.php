@@ -93,8 +93,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
             </div>
         </div>
   </div>
-
-  <button type="submit" class="btn btn-primary" role="button">Registrarme</button>
+  <button type="submit" class="btn btn-primary" id="enviar" role="button">Registrarme</button>
 </form>
 </div>
 </body>
