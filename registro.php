@@ -33,18 +33,18 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
   </p>
 </div>
 
-    <form>
+    <form onsubmit = "return validar()">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Nombre(s):</label>
-                <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre(s)">
+                <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre(s)" onblur="revisar(this)">
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Apellido(s):</label>
-                <input type="text" class="form-control" id="apellido" aria-describedby="emailHelp" placeholder="Apellido(s)">
+                <input type="text" class="form-control" id="apellido" aria-describedby="emailHelp" placeholder="Apellido(s)" onblur="revisar(this)">
             </div>
         </div>
     </div>
@@ -62,7 +62,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleSelect1">Numero de documento</label>
-                <input type="text" class="form-control" id="numero_documento" aria-describedby="emailHelp" placeholder="Apellido(s)">                
+                <input type="number" class="form-control" id="numero_documento" aria-describedby="emailHelp" placeholder="Apellido(s)" onblur="revisar(this)">                
             </div>
         </div>
     </div>
@@ -70,13 +70,13 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
     <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Telefono</label>
-                <input type="number" class="form-control" id="telefono" aria-describedby="emailHelp" placeholder="Telefono">
+                <input type="number" class="form-control" id="telefono" aria-describedby="emailHelp" placeholder="Telefono" onblur="revisar(this)">
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Correo</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Correo">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Correo" onblur="revisar(this) revisaremail(this)">
             </div>
         </div>
     </div>
@@ -84,13 +84,13 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputPassword1">Contraseña</label>
-                <input type="password" class="form-control" id="contrasena" placeholder="Contraseña">
+                <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" onblur="revisar(this)">
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputPassword1">Repetir Contraseña</label>
-                <input type="password" class="form-control" id="re_contrasena" placeholder="Repetir Contraseña">
+                <input type="password" class="form-control" id="re_contrasena" placeholder="Repetir Contraseña" onblur="revisar(this)">
             </div>
         </div>
   </div>
