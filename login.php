@@ -27,7 +27,7 @@
                                 Diligencie el formulario que aparece allí y asi posteriormente ingresar a la página. 
                             Registrese en la pagina ingresando al enlace anterior o dirigiendose a la sección REGISTRAR del menú en la parte superior de la página. </p>
             <p class="lead">
-            <a class="btn btn-primary btn-lg" id="learn" href="#" id="leer" role="button">Leer màs</a>
+            <a class="btn btn-success btn-lg" id="learn" href="#" id="leer" role="button">Leer màs</a>
             </p>
         </div>
         <div class="center">

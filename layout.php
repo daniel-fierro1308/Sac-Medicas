@@ -10,12 +10,14 @@
     <style>
         nav {
             margin-bottom: 3%;
-            background-color: #fff;
+        }
+        ul {
+          color: #ffffff;
         }
     </style>
 </head>
 <body>
-   <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+   <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -23,19 +25,19 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav navbar-right pull-lg-right">
       <li class="nav-item">
-        <a class="nav-link" href="index.php">INICIO<span class="sr-only">(current)</span></a>
+        <a class="nav-link active" href="index.php">INICIO<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="quienes_somos.php">¿QUIENES SOMOS?</a>
+        <a class="nav-link active" href="quienes_somos.php">¿QUIENES SOMOS?</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="login.php">INICIAR SESION</a>
+        <a class="nav-link active" href="login.php">INICIAR SESION</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="registro.php">REGISTRARSE</a>
+        <a class="nav-link active" href="registro.php">REGISTRARSE</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">CONTACTO</a>
+        <a class="nav-link active" href="#">CONTACTO</a>
       </li>
     </ul>
   </div>
