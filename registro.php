@@ -23,7 +23,7 @@
     ?>
     <div class="container">
     <div class="jumbotron">
-  <h1 class="display-3">REGISTRO DE USUARIOS</h1>
+  <h1 class="display-3 animated fadeInLeft">REGISTRO DE USUARIOS</h1>
   <p class="lead more">Si usted no cuenta con un usuario registrado, lo invitamos a que se registre ingresando su información personal en el siguiente formulario.
 <br>
 Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
@@ -63,7 +63,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleSelect1">Numero de documento</label>
-                <input type="number" class="form-control" id="numero_documento" aria-describedby="emailHelp" placeholder="Apellido(s)" onblur="revisar(this)">                
+                <input type="number" class="form-control" id="numero_documento" aria-describedby="emailHelp" placeholder="Número de Documento" onblur="revisar(this)">                
             </div>
         </div>
     </div>
@@ -96,6 +96,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         </div>
   </div>
   <button type="submit" class="btn btn-primary" id="enviar" role="button">Registrarme</button>
+  <small id="emailHelp" class="form-text text-muted">¿Ya tienes una cuenta? <a href="login.php">Entra aquí</a></small>
 </form>
 </div>
 </body>
