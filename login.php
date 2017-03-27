@@ -30,20 +30,32 @@
             <a class="btn btn-primary btn-lg" id="learn" href="#" id="leer" role="button">Leer màs</a>
             </p>
         </div>
+        <div class="center">
         <form action="">
-            <div class="col-md-6">
+            <div class="col-md-11">
             <div class="form-group">
                 <label for="exampleSelect1">Numero de documento</label>
                 <input type="number" class="form-control" id="numero_documento" aria-describedby="emailHelp" placeholder="Numero de Documento" onblur="revisar(this)">                
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-11">
             <div class="form-group">
                 <label for="exampleInputPassword1">Contraseña</label>
                 <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" onblur="revisar(this)">
             </div>
         </div>
+         
+        <div class="form-group row">
+            <div class="col-md-9">
+              <small id="emailHelp" class="form-text text-muted"><a href="login.php">¿Olvidó su Contraseña?</a></small>
+            </div>
+            <div class="col-md-3">
+        <button class="btn btn-primary" role="button">Iniciar Sesión</button>
+        </div>
+        </div>
+        </div>
         </form>
+       
     </div>
 </body>
 </html>
