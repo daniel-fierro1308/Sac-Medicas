@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/css/registro.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="public/js/registro.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.more').hide();
-            $('#learn').click(function(){
-                $('.more').toggle(1000);
-            });
-        });
-    </script>
     <title>Registrarse</title>
+
+    <template id="mensaje">
+        <div class="alert alert-{{type}}" role="alert">
+            {{body}}
+        </div>
+    </template>
+    
 </head>
 <body>
     <?php 
@@ -34,12 +31,13 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
   </p>
 </div>
     <div id="alerta" align="center"></div>
-    <form onsubmit="return validar(this);" method="post">
+    <form>
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Nombre(s):</label>
-                <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre(s)" onblur="revisar(this)" name="nombre">
+                <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp" placeholder="Nombre(s)" onblur="revisar(this)" 
+                >
             </div>
         </div>
         <div class="col-md-6">
@@ -63,7 +61,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleSelect1">Numero de documento</label>
-                <input type="number" class="form-control" id="numero_documento" name="documento" aria-describedby="emailHelp" placeholder="Número de Documento" onblur="revisar(this)">                
+                <input type="number" class="form-control" id="documento" name="documento" aria-describedby="emailHelp" placeholder="Número de Documento" onblur="revisar(this)">                
             </div>
         </div>
     </div>
@@ -77,7 +75,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Correo</label>
-                <input type="text" class="form-control" id="email" name="correo" aria-describedby="emailHelp" placeholder="Correo" onblur="revisar(this); revisaremail(this);">
+                <input type="text" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Correo" onblur="revisar(this); revisaremail();">
             </div>
         </div>
     </div>
@@ -85,7 +83,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputPassword1">Contraseña</label>
-                <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña" onblur="revisar(this); revisarContra(this);">
+                <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña" onblur="revisar(this); revisarContra();">
             </div>
         </div>
         <div class="col-md-6">
@@ -95,9 +93,21 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
             </div>
         </div>
   </div>
-  <button type="submit" class="btn btn-primary" id="enviar" role="button">Registrarme</button>
+  <button type="button" class="btn btn-primary" id="enviar" role="button" onclick="validar()">Registrarme</button>
   <small id="emailHelp" class="form-text text-muted">¿Ya tienes una cuenta? <a href="login.php">Entra aquí</a></small>
 </form>
 </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="public/js/handlebars.js"></script>
+    <script src="public/js/registro.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.more').hide();
+            $('#learn').click(function(){
+                $('.more').toggle(1000);
+            });
+        });
+    </script>
 </body>
 </html>
