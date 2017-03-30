@@ -11,9 +11,8 @@
     <?php
     require('layout.php');
     ?>
-    
+
     <button class="btn btn-success boton" role="button">Manual de usuario</button>
-    
     <h1 style="color:#069;">CENTRO DE SALUD RAFAEL REYES</h1>
     
 <div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
@@ -54,32 +53,40 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+    
     <div class="row content">
-        <div class="col-md-6">
-        <h3 align="center" style="margin-bottom:3%; color:#069;">BIENVENIDOS A ESTE SITIO WEB, EN DONDE PODRAS REALIZAR LA SOLICITUD DE LAS CITAS MÉDICAS PARA LOS USUARIOS DEL CENTRO DE SALUD.</h3>
-<p>Aquí podras solicitar tus citas médicas,
+        <div class="col-md-12">
+        <h3 align="center">BIENVENIDOS A ESTE SITIO WEB</h3>
+<p align="center" class="intro">Aquí podras solicitar tus citas médicas,
 actualizar tu información personal y cambiar tu contraseña.
  Para ellos deberas de registrarte en el sitio web y posteriormente ingresar
 al sistema con tu Número de documento y contraseña.</p> 
         </div>
-        <div class="col-md-6">
-
-            <div class="info"><a href="#"><img src="../public/img/info/login.png"></a></div>
-
-            <div class="text"><p><strong style="color:#069">LOG IN:</strong> Allí podras ingresar y solicitar tus citas médicas,
+    </div>   
+        <div class="row">
+        <div class="col-md-4">
+         <div align="center"> <a href="login.php"><img src="../public/img/info/login.png"></a></div>
+            <div class="text"><p><strong>LOG IN:</strong> Allí podras ingresar y solicitar tus citas médicas,
                 actualizar tu información personal y cambiar tu conraseña. 
                  Para ello deberas haberte registrado anteriormente en el Sitio Web.</p></div>
-
-            <div class="info"><a href="#"><img src="../public/img/info/registro.png"></a></div>
-
-            <div class="text"><p><strong style="color:#069">REGISTRO:</strong> Para poder ingresar debes de estar registrado 
+        </div>
+        <div class="col-md-4">                    
+           <div align="center"><a href="registro.php"><img src="../public/img/info/registro.png"></a></div>
+            <div class="text"><p><strong>REGISTRO:</strong> Para poder ingresar debes de estar registrado 
                 en el Sitio Web,por eso deberas diligenciar el formulario que aparece allí con la respectiva información que se solicita.</p></div>
-
-            <div class="info"><a href="formulario contacto.php"><img src="../public/img/info/contacto.png"></a></div>
-
-            <div class="text"><p><strong style="color:#069">CONTACTO:</strong> Por este medio podras hacernos saber tus dudas,
+        </div>
+        <div class="col-md-4">
+           <div align="center"> <a href="contacto.php"><img src="../public/img/info/contacto.png"></a></div>
+            <div class="text" align="center"><p><strong>CONTACTO:</strong> Por este medio podras hacernos saber tus dudas,
             quejas o reclamos y recomendaciones que tengas para nosotros.
             Tambien podras encontrar un mapa con nuestra ubicación por si deseas acercarte.</p></div>
-    </div>
+            </div>
+   </div>
+
+   <script src="../public/js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>

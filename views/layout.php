@@ -21,7 +21,7 @@
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">Sac-Medicas</a>
+  <a class="navbar-brand" href="index.php">Sac-Medicas</a>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav navbar-right pull-lg-right">
       <li class="nav-item">
@@ -37,7 +37,7 @@
         <a class="nav-link active" href="registro.php">REGISTRARSE</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">CONTACTO</a>
+        <a class="nav-link active" href="contacto.php">CONTACTO</a>
       </li>
     </ul>
   </div>

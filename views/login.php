@@ -50,7 +50,7 @@
               <small id="emailHelp" class="form-text text-muted"><a href="login.php">¿Olvidó su Contraseña?</a></small>
             </div>
             <div class="col-md-3">
-        <button class="btn btn-primary" role="button">Iniciar Sesión</button>
+        <button type="button" class="btn btn-primary" role="button">Iniciar Sesión</button>
         </div>
         </div>
         </div>
