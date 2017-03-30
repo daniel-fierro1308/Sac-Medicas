@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="../public/css/index.css">
     <title>Centro de Salud Rafael Reyes</title>
 </head>
 <body>
@@ -28,22 +28,22 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <img class="d-block img-fluid image" src="public/img/slider/imagen1.jpg" alt="First slide">
+      <img class="d-block img-fluid image" src="../public/img/slider/imagen1.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block img-fluid image" src="public/img/slider/imagen2.jpg" alt="Second slide">
+      <img class="d-block img-fluid image" src="../public/img/slider/imagen2.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block img-fluid image" src="public/img/slider/imagen3.jpg" alt="Third slide">
+      <img class="d-block img-fluid image" src="../public/img/slider/imagen3.jpg" alt="Third slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block img-fluid image" src="public/img/slider/imagen4.jpg" alt="Fourth slide">
+      <img class="d-block img-fluid image" src="../public/img/slider/imagen4.jpg" alt="Fourth slide">
     </div>
   <div class="carousel-item">
-      <img class="d-block img-fluid image" src="public/img/slider/imagen5.jpg" alt="Five slide">
+      <img class="d-block img-fluid image" src="../public/img/slider/imagen5.jpg" alt="Five slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block img-fluid image" src="public/img/slider/imagen6.jpg" alt="Sixt slide">
+      <img class="d-block img-fluid image" src="../public/img/slider/imagen6.jpg" alt="Sixt slide">
     </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -64,18 +64,18 @@ al sistema con tu Número de documento y contraseña.</p>
         </div>
         <div class="col-md-6">
 
-            <div class="info"><a href="#"><img src="public/img/info/login.png"></a></div>
+            <div class="info"><a href="#"><img src="../public/img/info/login.png"></a></div>
 
             <div class="text"><p><strong style="color:#069">LOG IN:</strong> Allí podras ingresar y solicitar tus citas médicas,
                 actualizar tu información personal y cambiar tu conraseña. 
                  Para ello deberas haberte registrado anteriormente en el Sitio Web.</p></div>
 
-            <div class="info"><a href="#"><img src="public/img/info/registro.png"></a></div>
+            <div class="info"><a href="#"><img src="../public/img/info/registro.png"></a></div>
 
             <div class="text"><p><strong style="color:#069">REGISTRO:</strong> Para poder ingresar debes de estar registrado 
                 en el Sitio Web,por eso deberas diligenciar el formulario que aparece allí con la respectiva información que se solicita.</p></div>
 
-            <div class="info"><a href="formulario contacto.php"><img src="public/img/info/contacto.png"></a></div>
+            <div class="info"><a href="formulario contacto.php"><img src="../public/img/info/contacto.png"></a></div>
 
             <div class="text"><p><strong style="color:#069">CONTACTO:</strong> Por este medio podras hacernos saber tus dudas,
             quejas o reclamos y recomendaciones que tengas para nosotros.

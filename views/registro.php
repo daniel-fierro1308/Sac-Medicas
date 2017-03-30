@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="public/css/registro.css">
+    <link rel="stylesheet" href="../public/css/registro.css">
     <title>Registrarse</title>
 
     <template id="mensaje">
@@ -27,7 +27,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
 
 <p class="lead more">Registrandose en la pagina podra ingresar a ella y posteriormente podra solicitar su cita médica y llevar a cabo las distintas funciones que se encuentran allí.</p>
   <p class="lead">
-    <a class="btn btn-success btn-lg" id="learn" href="#" id="leer" role="button">Leer màs</a>
+    <a class="btn btn-success btn-lg" id="learn" href="#" id="leer" role="button">Leer más</a>
   </p>
 </div>
     <div id="alerta" align="center"></div>
@@ -99,8 +99,8 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
 </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="public/js/handlebars.js"></script>
-    <script src="public/js/registro.js"></script>
+    <script src="../public/js/handlebars.js"></script>
+    <script src="../public/js/registro.js"></script>
     <script>
         $(document).ready(function(){
             $('.more').hide();

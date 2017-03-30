@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="public/js/quienes.js"></script>
-    <link rel="stylesheet" href="public/css/quienes.css">
+    <script src="../public/js/quienes.js"></script>
+    <link rel="stylesheet" href="../public/css/quienes.css">
     <title>¿Quienes somos?</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-md-6">
                 <a href="#" id="mision" style="text-decoration:none" title="Clic Aqui!"><h2 align="center" style="font-size:20px; color:#069;"><strong>MISION</strong></h2>
-                <div align="center" style="padding-left:14%; margin-top:1%"><img src="public/img/quienes/mision.png" /></div></a>	
+                <div align="center" style="padding-left:14%; margin-top:1%"><img src="../public/img/quienes/mision.png" /></div></a>	
                     <p id="mision1">Somos una Empresa Social del Estado,
                         prestadora de servicios integrales en atenci&oacute;n primaria en salud,
                         diagnostico tratamiento y rehabilitacion, ubicada en la region del Alto Magdalena, 
@@ -28,7 +28,7 @@
 
             <div class="col-md-6">
                 <a href="#" id="vision" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>VISI&Oacute;N</strong></h2>
-                    <div align="center" style="margin-top:3%"><img src="public/img/quienes/vision.png" /></div></a>
+                    <div align="center" style="margin-top:3%"><img src="../public/img/quienes/vision.png" /></div></a>
                 <p id="vision1">Para el a&ntilde;o 2015, la ESE Hospital marco Felipe Afanador de Tocaima se posicionar&aacute;
                     como un empresa l&iacute;der en promoci&oacute;n de la salud y prevención de la enfermedad,
                     obteniendo el reconocimiento en el Departamento de Cundinamarca, 
@@ -40,9 +40,9 @@
     <div class="row">
         <div class="col-md-6 division">
             <a href="#" id="object" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>OBJETIVOS CORPORATIVOS</strong></h2>
-            <div align="center" style="margin-top:3%"><img src="public/img/quienes/objetivos corporativos.png" /></div></a>
+            <div align="center" style="margin-top:3%"><img src="../public/img/quienes/objetivos corporativos.png" /></div></a>
             <div id="object1">	
-                <ul style="margin-top:10px"> 
+                <ul style="margin-top:10px; color: #000;"> 
                     <li style="margin-top:13px">Gesti&oacute;n Gerencial moderna. Desarrollar un sistema de mejoramiento continuo a trav&eacute;s del dise&ntilde;o y aplicaci&oacute;n de una metodolog&iacute;a flexible e integral de modernizaci&oacute;n de la Gesti&oacute;n Gerencial que articule su direcci&oacute;n estrat&eacute;gica y su gerencia del d&iacute;a a d&iacute;a.</li>
                     <li style="margin-top:13px">Calidad en la atenci&oacute;n. Entregar a los usuarios servicios de salud con calidad, trabajando por mejorar continuamente nuestra atenci&oacute;n para aumentar la satisfacci&oacute;n de los clientes.</li>
                     <li style="margin-top:13px">Autosostenibilidad financiera. Asegurar la sostenibilidad financiera de la empresa en el corto, mediano y largo plazo, por medio de nuestra propia gesti&oacute;n, obteniendo as&iacute;, m&aacute;xima competitividad dentro del &aacute;rea de influencia y la liquidez necesaria para cumplir con todas nuestras obligaciones.</li>
@@ -53,7 +53,7 @@
 
         <div class="col-md-6 division">
             <a href="#" id="valores" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"> <strong>VALORES CORPORATIVOS</strong></h2>
-                <div align="center" style="margin-top:3%"><img src="public/img/quienes/Valores corporativos.png" /></div></a>
+                <div align="center" style="margin-top:3%"><img src="../public/img/quienes/Valores corporativos.png" /></div></a>
             <div id="valores1">	
                 <p style="margin-top:10px"><strong style="color:#069">VALOR:</strong> Forma de ser y actuar de las personas que son altamente deseables como atributos o cualidades nuestras y de los dem&aacute;s, por cuanto posibilitan la construcci&oacute;n de una convivencia gratificante en el marco de la dignidad humana.</p>
                 <p style="margin-top:7px"><strong style="color:#069">HONESTIDAD:</strong> Es una cualidad humana consistente en comportarse y expresarse con coherencia y sinceridad y de acuerdo con los valores de verdad y justicia. En su sentido m&aacute;s evidente, la honestidad puede entenderse como el simple respeto a la verdad en relaci&oacute;n con el mundo, los hechos y las personas; en otros sentidos, la honestidad tambi&eacute;n implica la relaci&oacute;n entre el sujeto y los dem&aacute;s, y del sujeto consigo mismo.</p>
@@ -65,7 +65,7 @@
     
     <div class="row">
         <a href="#" class="col-md-12" id="principios" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>PRINCIPIOS CORPORATIVOS</strong></h2>
-            <div align="center" style="margin-top:2%"><p><img src="public/img/quienes/Historia.png" /></p></div></a>
+            <div align="center" style="margin-top:2%"><p><img src="../public/img/quienes/Historia.png" /></p></div></a>
 
         <div class="row">
             <div class="col-md-6 principios1">
@@ -85,7 +85,7 @@
   <div class="row">
 
     <a href="#" id="historia" class="col-md-12" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>HISTORIA</strong></h2>
-        <div align="center" style="margin-top:2%"><p><img src="public/img/quienes/historia d.png" /></p></div></a>
+        <div align="center" style="margin-top:2%"><p><img src="../public/img/quienes/historia d.png" /></p></div></a>
 
     <div class="row">
         <div class="col-md-6 historia1">
