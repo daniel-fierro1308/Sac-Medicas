@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <a href="#" id="mision" style="text-decoration:none" title="Clic Aqui!"><h2 align="center" style="font-size:20px; color:#069;"><strong>MISION</strong></h2>
+                <a id="mision" style="text-decoration:none" title="Clic Aqui!"><h2 align="center" style="font-size:20px; color:#069;"><strong>MISION</strong></h2>
                 <div align="center" style="padding-left:14%; margin-top:1%"><img src="../public/img/quienes/mision.png" /></div></a>	
                     <p id="mision1">Somos una Empresa Social del Estado,
                         prestadora de servicios integrales en atenci&oacute;n primaria en salud,
@@ -27,7 +27,7 @@
             </div>
 
             <div class="col-md-6">
-                <a href="#" id="vision" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>VISI&Oacute;N</strong></h2>
+                <a  id="vision" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>VISI&Oacute;N</strong></h2>
                     <div align="center" style="margin-top:3%"><img src="../public/img/quienes/vision.png" /></div></a>
                 <p id="vision1">Para el a&ntilde;o 2015, la ESE Hospital marco Felipe Afanador de Tocaima se posicionar&aacute;
                     como un empresa l&iacute;der en promoci&oacute;n de la salud y prevención de la enfermedad,
@@ -39,7 +39,7 @@
          </div>
     <div class="row">
         <div class="col-md-6 division">
-            <a href="#" id="object" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>OBJETIVOS CORPORATIVOS</strong></h2>
+            <a  id="object" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>OBJETIVOS CORPORATIVOS</strong></h2>
             <div align="center" style="margin-top:3%"><img src="../public/img/quienes/objetivos corporativos.png" /></div></a>
             <div id="object1">	
                 <ul style="margin-top:10px; color: #000;"> 
@@ -52,7 +52,7 @@
         </div>
 
         <div class="col-md-6 division">
-            <a href="#" id="valores" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"> <strong>VALORES CORPORATIVOS</strong></h2>
+            <a  id="valores" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"> <strong>VALORES CORPORATIVOS</strong></h2>
                 <div align="center" style="margin-top:3%"><img src="../public/img/quienes/Valores corporativos.png" /></div></a>
             <div id="valores1">	
                 <p style="margin-top:10px"><strong style="color:#069">VALOR:</strong> Forma de ser y actuar de las personas que son altamente deseables como atributos o cualidades nuestras y de los dem&aacute;s, por cuanto posibilitan la construcci&oacute;n de una convivencia gratificante en el marco de la dignidad humana.</p>
@@ -64,7 +64,7 @@
     </div>
     
     <div class="row">
-        <a href="#" class="col-md-12" id="principios" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>PRINCIPIOS CORPORATIVOS</strong></h2>
+        <a  class="col-md-12" id="principios" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>PRINCIPIOS CORPORATIVOS</strong></h2>
             <div align="center" style="margin-top:2%"><p><img src="../public/img/quienes/Historia.png" /></p></div></a>
 
         <div class="row">
@@ -84,7 +84,7 @@
 
   <div class="row">
 
-    <a href="#" id="historia" class="col-md-12" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>HISTORIA</strong></h2>
+    <a  id="historia" class="col-md-12" style="text-decoration:none" title="Clic Aqui!"><h2 style="color:#069; font-size:20px" align="center"><strong>HISTORIA</strong></h2>
         <div align="center" style="margin-top:2%"><p><img src="../public/img/quienes/historia d.png" /></p></div></a>
 
     <div class="row">

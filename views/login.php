@@ -51,11 +51,10 @@
             </div>
             <div class="col-md-3">
         <button type="button" class="btn btn-primary" role="button">Iniciar Sesión</button>
-        </div>
+            </div>
         </div>
         </div>
         </form>
-       
     </div>
 </body>
 </html>
