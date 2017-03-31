@@ -89,7 +89,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputPassword1">Repetir Contraseña</label>
-                <input type="password" class="form-control" id="re_contrasena" name="re_contrasena" placeholder="Repetir Contraseña" onblur="revisar(this)">
+                <input type="password" class="form-control" id="re_contrasena" name="re_contrasena" placeholder="Repetir Contraseña" onblur="revisar(this);">
             </div>
         </div>
   </div>

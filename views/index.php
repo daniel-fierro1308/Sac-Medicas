@@ -62,7 +62,7 @@
 <p align="center" class="intro">Aquí podras solicitar tus citas médicas,
 actualizar tu información personal y cambiar tu contraseña.
  Para ellos deberas de registrarte en el sitio web y posteriormente ingresar
-al sistema con tu Número de documento y contraseña. <br><br>Además de esto podras encontrar las siguientes funcionalidades</p> 
+al sistema con tu Número de documento y contraseña. <br><br><strong>Además de esto podras encontrar las siguientes funcionalidades:</strong></p> 
         </div>
     </div>  
       
