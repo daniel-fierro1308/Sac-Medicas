@@ -31,7 +31,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
   </p>
 </div>
     <div id="alerta" align="center"></div>
-    <form>
+    <form action="./controladores/registrar.php" method="post" onsubmit="return validar();">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
@@ -52,9 +52,9 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleSelect1">Tipo de documento</label>
-                <select class="form-control" id="Tipo_documento">
-                    <option>Tarjeta de identidad</option>
-                    <option>Cedula de Ciudadania</option>
+                <select class="form-control" id="Tipo_documento" name="tipo_documento">
+                    <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                    <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
                 </select>
             </div>
         </div>
@@ -93,7 +93,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
             </div>
         </div>
   </div>
-  <button type="button" class="btn btn-primary" id="enviar" role="button" onclick="validar()">Registrarme</button>
+  <button type="submit" class="btn btn-primary" id="enviar" role="button">Registrarme</button>
   <small id="emailHelp" class="form-text text-muted">¿Ya tienes una cuenta? <a href="login.php">Entra aquí</a></small>
 </form>
 </div>

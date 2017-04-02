@@ -48,26 +48,29 @@ function validar() {
    if(nombre.value == '' || apellido.value == '' || documento.value == '' || telefono.value == '' || correo.value == '' || contrasena.value == '' || re_contrasena.value == '') {
        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'Por favor complete todos los campos '});
         tiempo();
+        return false;
 
    } else if(!expresion.test(correo.value)){
        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'El correo ingresado no es válido'});
        tiempo();
-
+       return false;
    } else if(!passExp.test(contrasena.value)){
        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'La contraseña ingresada no es válida'});
         $(':password').val('').addClass('error');
          tiempo();
-
+         return false;
    } else if(contrasena.value != re_contrasena.value) {
        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'Las contraseñas no coinciden, por favor vuelva a intentar'});
         $(':password').addClass('bien');
         $(':password').val('');
         tiempo();
-   } else {
-       document.getElementById('alerta'). innerHTML = render({type: 'success', body: 'Se ha registrado correctamente'});
-        tiempo();
-        $('input').val('').addClass('bien');
-   }
+        return false;
+    } else {
+        // document.getElementById('alerta'). innerHTML = render({type: 'success', body: 'Se ha registrado correctamente'});
+        //  tiempo();
+        //  $('input').val('').addClass('bien');
+         return true;
+    }
 }
 
 
