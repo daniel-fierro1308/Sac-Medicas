@@ -31,7 +31,8 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
   </p>
 </div>
     <div id="alerta" align="center"></div>
-    <form action="./controladores/registrar.php" method="post" onsubmit="return validar();">
+    <div id="result"></div>
+    <form method="post">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
@@ -52,7 +53,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleSelect1">Tipo de documento</label>
-                <select class="form-control" id="Tipo_documento" name="tipo_documento">
+                <select class="form-control" id="tipo_documento" name="tipo_documento">
                     <option value="Tarjeta de identidad">Tarjeta de identidad</option>
                     <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
                 </select>
@@ -93,7 +94,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
             </div>
         </div>
   </div>
-  <button type="submit" class="btn btn-primary" id="enviar" role="button" name="enviar">Registrarme</button>
+  <button type="button" class="btn btn-primary" id="enviar" role="button" name="enviar" onclick="validar()">Registrarme</button>
   <small id="emailHelp" class="form-text text-muted">¿Ya tienes una cuenta? <a href="login.php">Entra aquí</a></small>
 </form>
 </div>
@@ -106,6 +107,37 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
             $('.more').hide();
             $('#learn').click(function(){
                 $('.more').toggle(1000);
+            });
+
+            $('#enviar').click(function(){
+                var nombre, apellido, tipo_documento, documento, telefono, correo, contrasena, re_contrasena;
+                nombre = $('#nombre').val();
+                apellido = $('#apellido').val();
+                tipo_documento = $('#tipo_documento').val();
+                documento = $('#documento').val();
+                telefono = $('#telefono').val();
+                correo = $('#correo').val();
+                contrasena = $('#contrasena').val();
+                re_contrasena = $('#re_contrasena').val();
+
+                if($.trim(nombre).length > 0 && $.trim(apellido).length > 0 && $.trim(tipo_documento).length > 0 && $.trim(documento).length > 0 && $.trim(telefono).length > 0 && $.trim(correo).length > 0 && $.trim(contrasena).length > 0 && $.trim(re_contrasena).length > 0){
+                    $.ajax({
+                        url: './controladores/registrar.php',
+                        method: 'POST',
+                        data: {nombre:nombre, apellido:apellido, tipo_documento:tipo_documento, documento:documento, telefono:telefono, correo:correo, contrasena:contrasena, re_contrasena:re_contrasena},
+                        cache: false,
+                        beforeSend:function(){
+                            $('#enviar').val('Comprobando la informacion...');
+                        }, 
+                        success:function(data){
+                            $('#enviar').val('Registrarme');
+                            if(data){
+                                $('#result').html(data);
+                                $('input').val('');
+                            };    
+                        }
+                    });
+                }; 
             });
         });
     </script>
