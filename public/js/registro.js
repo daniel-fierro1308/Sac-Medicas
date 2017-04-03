@@ -66,11 +66,10 @@ function validar() {
         tiempo();
         return false;
     } else {
-        // document.getElementById('alerta'). innerHTML = render({type: 'success', body: 'Se ha registrado correctamente'});
-        //  tiempo();
-        //  $('input').val('').addClass('bien');
-         return true;
+        $('input').val('');
+         return false;
     }
 }
+
 
 
