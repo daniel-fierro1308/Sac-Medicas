@@ -99,7 +99,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
 </form>
 </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../public/js/recursos/jquery.min.js"></script>
     <script src="../public/js/handlebars.js"></script>
     <script src="../public/js/registro.js"></script>
     <script src="../public/js/peticiones/registrar.js"></script>
