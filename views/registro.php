@@ -31,7 +31,8 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
   </p>
 </div>
     <div id="alerta" align="center"></div>
-    <form action="./controladores/registrar.php" method="post" onsubmit="return validar();">
+    <div id="result" align="center"></div>
+    <form method="post">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
@@ -52,7 +53,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleSelect1">Tipo de documento</label>
-                <select class="form-control" id="Tipo_documento" name="tipo_documento">
+                <select class="form-control" id="tipo_documento" name="tipo_documento">
                     <option value="Tarjeta de identidad">Tarjeta de identidad</option>
                     <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
                 </select>
@@ -93,21 +94,14 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
             </div>
         </div>
   </div>
-  <button type="submit" class="btn btn-primary" id="enviar" role="button" name="enviar">Registrarme</button>
+  <button type="button" class="btn btn-primary" id="enviar" role="button" name="enviar" onclick="validar()">Registrarme</button>
   <small id="emailHelp" class="form-text text-muted">¿Ya tienes una cuenta? <a href="login.php">Entra aquí</a></small>
 </form>
 </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../public/js/recursos/jquery.min.js"></script>
     <script src="../public/js/handlebars.js"></script>
     <script src="../public/js/registro.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.more').hide();
-            $('#learn').click(function(){
-                $('.more').toggle(1000);
-            });
-        });
-    </script>
+    <script src="../public/js/peticiones/registrar.js"></script>
 </body>
 </html>

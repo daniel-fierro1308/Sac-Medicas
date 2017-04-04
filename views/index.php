@@ -90,8 +90,8 @@ al sistema con tu Número de documento y contraseña. <br><br><strong>Además de
             </div>
             </div>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-   <script src="../public/js/wow.min.js"></script>
+    <script src="../public/js/recursos/jquery.min.js"></script>
+   <script src="../public/js/recursos/wow.min.js"></script>
    <script src="../public/js/index.js"></script>
 </body>
 </html>

@@ -65,9 +65,6 @@ function validar() {
         $(':password').val('');
         tiempo();
         return false;
-    } else {
-        $('input').val('');
-         return false;
     }
 }
 
