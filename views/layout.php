@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +11,6 @@
     <style>
         nav {
             margin-bottom: 3%;
-        }
-        ul {
-          color: #ffffff;
         }
     </style>
 </head>
@@ -44,5 +42,7 @@
 </nav>
 <script src="../public/js/recursos/jquery.min.js"></script>
 <script src="../public/js/recursos/bootstrap.min.js"></script>
+
+
 </body>
 </html>
