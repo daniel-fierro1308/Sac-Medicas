@@ -1,0 +1,13 @@
+#footer {
+	background-color:#069;
+	color:#fff;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#footer p {
+    font-size: 15px;
+}
