@@ -1,6 +1,5 @@
 <?php 
       include('conexion.php');  
-    
     $nombre = $_POST["nombre"]; 
     $apellido = $_POST["apellido"];
     $tipo_documento = $_POST["tipo_documento"];

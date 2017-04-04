@@ -31,7 +31,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
   </p>
 </div>
     <div id="alerta" align="center"></div>
-    <div id="result"></div>
+    <div id="result" align="center"></div>
     <form method="post">
     <div class="row">
         <div class="col-md-6">

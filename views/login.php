@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION["documento"])) {
+  header("location:index_log.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,39 +33,33 @@
             <a class="btn btn-success btn-lg" id="learn" href="#" id="leer" role="button">Leer más</a>
             </p>
         </div>
-        <div class="center">
-        <div id="alerta"></div>
+        <div id="alerta" align="center"></div>
+        <div id="result" align="center"></div>
         <form method="post">
-            <div class="col-md-11">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleSelect1">Numero de documento</label>
+                        <input type="number" class="form-control" id="documento" name="documento" aria-describedby="emailHelp" placeholder="Numero de Documento">                
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Contraseña</label>
+                        <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña">
+                    </div>
+                </div>
+        </div>
+        
             <div class="form-group">
-                <label for="exampleSelect1">Numero de documento</label>
-                <input type="number" class="form-control" id="documento" name="documento" aria-describedby="emailHelp" placeholder="Numero de Documento">                
+                <button type="button" name="login" id="login" class="btn btn-success" role="button" onclick="validar_login()">Iniciar Sesión</button>
+                <small id="emailHelp" class="form-text text-muted"><a href="login.php">¿Olvidó su Contraseña?</a></small>
             </div>
-        </div>
-        <div class="col-md-11">
-            <div class="form-group">
-                <label for="exampleInputPassword1">Contraseña</label>
-                <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña">
-            </div>
-        </div>
-        <div class="form-group">
-            <button type="button" name="login" id="login" class="btn btn-success" role="button" onclick="validar_login()">Iniciar Sesión</button>
-              <small id="emailHelp" class="form-text text-muted"><a href="login.php">¿Olvidó su Contraseña?</a></small>
-        </div>
-        </div>
-        </form>
-    </div>
+    </form>
+
 </body>
 <script src="../public/js/recursos/jquery.min.js"></script>
 <script src="../public/js/handlebars.js"></script>
 <script src="../public/js/login.js"></script>
-
-<script>
-        $(document).ready(function(){
-            $('.more').hide();
-            $('#learn').click(function(){
-                $('.more').toggle(1000);
-            });
-        });
-    </script>
+<script src="../public/js/peticiones/loguear.js"></script>
 </html>
