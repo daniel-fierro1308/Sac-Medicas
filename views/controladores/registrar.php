@@ -26,10 +26,10 @@
   
  
   if ($alerta != "") {
-    echo "<div class='alert alert-dismissible alert-danger'><button type='button' class='close' data-dismiss='alert'>×</button><strong>Error</strong><br>$result</div>";
+    echo "<div class='alert alert-dismissible alert-danger'><strong>Error</strong><br>$result</div>";
   } else {
-    $sql = "INSERT INTO usuarios(nombre, apellido, tipo_documento, documento, telefono, correo, contrasena) VALUES( '$nombre', '$apellido', '$tipo_documento', '$documento', '$telefono', '$contrasena')";
+    $sql = "INSERT INTO usuarios(nombre, apellido, tipo_documento, documento, telefono, correo, contrasena) VALUES( '$nombre', '$apellido', '$tipo_documento', '$documento', '$telefono','$correo', '$contrasena')";
     mysqli_query($con, $sql);
-    echo "<div class='alert alert-dismissible alert-success'><button type='button' class='close' data-dismiss='alert'>×</button><strong>¡Correcto!</strong><br>Se ha registrado correctamente.</div>";
+    echo "<div class='alert alert-dismissible alert-success'><strong>¡Correcto!</strong><br>Se ha registrado correctamente.</div>";
   } 
 ?>
