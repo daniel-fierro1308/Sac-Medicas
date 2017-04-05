@@ -6,9 +6,8 @@
 </head>
 <body>
 <?php
- include('logueado.php');
  include('./controladores/conexion.php');
-session_start();
+ include('layout.php');
 if(!isset($_SESSION["documento"])){
   header("location:login.php");
 } else {
@@ -18,7 +17,6 @@ $resultado = mysqli_query($con, $consulta);
 $row= mysqli_fetch_array($resultado);
 }
 ?>
-   
 <strong><p id="user"> <?php echo $row['nombre']; ?>   <?php echo $row['apellido']; ?>  </p></strong>
 </body>
 </html> 

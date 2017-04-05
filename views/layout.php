@@ -22,7 +22,23 @@
   <a class="navbar-brand" href="index.php">Sac-Medicas</a>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav navbar-right pull-lg-right">
+    <?php
+    session_start();
+      if (isset($_SESSION["documento"])) {
+        echo '<li class="nav-item">
+        <a class="nav-link active" href="index.php">INICIO<span class="sr-only">(current)</span></a>
+      </li>
       <li class="nav-item">
+        <a class="nav-link active" href="#">MIS VIDEOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">MI INFORMACION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="./controladores/logout.php">CERRAR SESION</a>
+      </li>';
+    } else {
+        echo '<li class="nav-item">
         <a class="nav-link active" href="index.php">INICIO<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
@@ -36,12 +52,15 @@
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="contacto.php">CONTACTO</a>
-      </li>
+      </li>';
+    }
+    ?>
     </ul>
   </div>
 </nav>
 <script src="../public/js/recursos/jquery.min.js"></script>
 <script src="../public/js/recursos/bootstrap.min.js"></script>
+<script src="../public/js/recursos/handlebars.js"></script>
 
 
 </body>

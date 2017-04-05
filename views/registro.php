@@ -98,9 +98,7 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
   <small id="emailHelp" class="form-text text-muted">¿Ya tienes una cuenta? <a href="login.php">Entra aquí</a></small>
 </form>
 </div>
-
     <script src="../public/js/recursos/jquery.min.js"></script>
-    <script src="../public/js/handlebars.js"></script>
     <script src="../public/js/registro.js"></script>
     <script src="../public/js/peticiones/registrar.js"></script>
 </body>

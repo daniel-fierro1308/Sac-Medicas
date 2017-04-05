@@ -1,5 +1,4 @@
 <?php
-session_start();
 if (isset($_SESSION["documento"])) {
   header("location:index_log.php");
 }
@@ -59,7 +58,6 @@ if (isset($_SESSION["documento"])) {
 
 </body>
 <script src="../public/js/recursos/jquery.min.js"></script>
-<script src="../public/js/handlebars.js"></script>
 <script src="../public/js/login.js"></script>
 <script src="../public/js/peticiones/loguear.js"></script>
 </html>
