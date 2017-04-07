@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Bienvenido</title>
+  <link rel="stylesheet" href="../public/css/logueado/index_log.css">
 </head>
 <body>
 <?php
@@ -17,7 +18,10 @@ $resultado = mysqli_query($con, $consulta);
 $row= mysqli_fetch_array($resultado);
 }
 ?>
-  <strong><p id="user">Bienvenido!<?php echo $row['nombre']; ?>   <?php echo $row['apellido']; ?>  </p></strong>
-  
+<div class="container">
+  <div class="bienvenida"> 
+  <strong><p id="user">Bienvenido! <?php echo $row['nombre']; ?>   <?php echo $row['apellido']; ?>  </p></strong>
+  </div>
+  </div>
 </body>
 </html> 

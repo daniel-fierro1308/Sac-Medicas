@@ -48,24 +48,6 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="exampleSelect1">Tipo de documento</label>
-                <select class="form-control" id="tipo_documento" name="tipo_documento">
-                    <option value="Tarjeta de identidad">Tarjeta de identidad</option>
-                    <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
-                </select>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="exampleSelect1">Numero de documento</label>
-                <input type="number" class="form-control" id="documento" name="documento" aria-describedby="emailHelp" placeholder="Número de Documento" onblur="revisar(this)">                
-            </div>
-        </div>
-    </div>
     <div class="row">
     <div class="col-md-6">
             <div class="form-group">
@@ -80,6 +62,16 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
             </div>
         </div>
     </div>
+
+     <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="exampleSelect1">Usuario</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="Usuario" onblur="revisar(this)">                
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">

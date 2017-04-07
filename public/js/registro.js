@@ -1,7 +1,7 @@
-var nombre, apellido, documento, telefono, correo, contrasena, re_contrasena, expresion, passExp, plantilla, render;
+var nombre, apellido, usuario, telefono, correo, contrasena, re_contrasena, expresion, passExp, plantilla, render;
 nombre = document.getElementById('nombre');
 apellido = document.getElementById('apellido');
-documento = document.getElementById('documento');
+usuario = document.getElementById('usuario');
 telefono = document.getElementById('telefono');
 correo = document.getElementById('correo');
 contrasena = document.getElementById('contrasena');
@@ -45,7 +45,7 @@ function tiempo(){
 }
 
 function validar() {
-   if(nombre.value == '' || apellido.value == '' || documento.value == '' || telefono.value == '' || correo.value == '' || contrasena.value == '' || re_contrasena.value == '') {
+   if(nombre.value == '' || apellido.value == '' || usuario.value == '' || telefono.value == '' || correo.value == '' || contrasena.value == '' || re_contrasena.value == '') {
        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'Por favor complete todos los campos '});
         tiempo();
         return false;
