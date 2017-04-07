@@ -12,7 +12,7 @@
     <?php
     require('layout.php');
     ?>
-   <!-- <h1 style="color:#069;">CENTRO DE SALUD RAFAEL REYES</h1> -->
+    <!--<h1 style="color:#069;">CENTRO DE SALUD RAFAEL REYES</h1> -->
     
 <!--<div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -21,8 +21,8 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li
-
   </ol>
+
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <img class="d-block img-fluid image" src="../public/img/slider/imagen1.jpg" alt="First slide">
@@ -61,8 +61,8 @@ al sistema.<br><br><strong>En este sitio podras encontrar las siguientes funcion
         <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
         <h5 align="center"><strong style="color: #069">INICIAR SESION</strong></h5>
          <div align="center"><img src="../public/img/info/iniciar_sesion.png" class="imagen" id="login" title="Click Aquí!"></div>
-            <div class="text" align="center"><p id="login1">Allí podras ingresar y solicitar tus citas médicas,
-                actualizar tu información personal y cambiar tu conraseña. 
+            <div class="text" align="center"><p id="login1">Allí podras ingresar y guardar tu contenido,
+                actualizar tu información personal y cambiar tu contraseña. 
                  Para ello deberas haberte registrado anteriormente en el Sitio Web.</p></div>
         </div>
         <div class="col-md-4 wow fadeInDown" data-wow-delay="1.2s">

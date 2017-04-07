@@ -21,11 +21,11 @@
     <div class="container">
     <div class="jumbotron">
   <h1 class="display-3 animated fadeInLeft">REGISTRO DE USUARIOS</h1>
-  <p class="lead more">Si usted no cuenta con un usuario registrado, lo invitamos a que se registre ingresando su información personal en el siguiente formulario.
+  <p class="lead more">Si no cuentas con un usuario registrado, te invitamos a que te registres ingresando tu información personal en el siguiente formulario.
 <br>
-Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
+Diligencia el formulario y asi posteriormente ingresar a la página.</p>
 
-<p class="lead more">Registrandose en la pagina podra ingresar a ella y posteriormente podra solicitar su cita médica y llevar a cabo las distintas funciones que se encuentran allí.</p>
+<p class="lead more">Registrandote podras ingresar y posteriormente podras acceder a los servicios que ofrecemos y a las distintas funciones que se encuentran allí.</p>
   <p class="lead">
     <a class="btn btn-success btn-lg" id="learn" href="#" id="leer" role="button">Leer más</a>
   </p>

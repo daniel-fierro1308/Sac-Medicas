@@ -11,8 +11,6 @@ passExp = /(?=[#$-/:-?{-~!"^_`\[\]a-zA-Z]*([0-9#$-/:-?{-~!"^_`\[\]]))(?=[#$-/:-?
 plantilla = document.getElementById('mensaje').innerHTML;
 render = Handlebars.compile(plantilla);
 
-
-
 function revisar(elemento){
     if(elemento.value==""){
         elemento.className = "error";
@@ -56,12 +54,11 @@ function validar() {
        return false;
    } else if(!passExp.test(contrasena.value)){
        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'La contraseña ingresada no es válida'});
-        $(':password').val('').addClass('error');
+        $(':password').val('');
          tiempo();
          return false;
    } else if(contrasena.value != re_contrasena.value) {
        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'Las contraseñas no coinciden, por favor vuelva a intentar'});
-        $(':password').addClass('bien');
         $(':password').val('');
         tiempo();
         return false;

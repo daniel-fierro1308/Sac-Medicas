@@ -45,7 +45,7 @@
         <a class="nav-link active" href="index.php">INICIO<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="quienes_somos.php">¿QUIENES SOMOS?</a>
+        <a class="nav-link active" href="quienes_somos.php">SERVICIOS</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="login.php">INICIAR SESION</a>

@@ -12,19 +12,19 @@
     $res = mysqli_query($con, $sql);
     $data = mysqli_fetch_array($res);
     if ($data > 0) {
-      $alerta .= "<br>-El nombre de usuario ya esta registrado";
+      $alerta .= "El nombre de usuario ya esta registrado";
     }
   
       $sql = "SELECT * FROM usuarios WHERE correo ='$correo'";
       $res = mysqli_query($con, $sql);
       $data = mysqli_fetch_array($res);
       if ($data > 0) {
-        $alerta .= "<br>-El correo ingresado ya está registrado.";
+        $alerta .= "El correo ingresado ya está registrado.";
       }
   
  
   if ($alerta != "") {
-    echo "<div class='alert alert-dismissible alert-danger'><strong>Error</strong><br>$alerta</div>";
+    echo "<div class='alert alert-dismissible alert-danger'><strong>Error </strong>$alerta</div>";
   } else {
     $sql = "INSERT INTO usuarios(nombre, apellido, usuario, telefono, correo, contrasena) VALUES( '$nombre', '$apellido', '$usuario', '$telefono','$correo', '$contrasena')";
     mysqli_query($con, $sql);

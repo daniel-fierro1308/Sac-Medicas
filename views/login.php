@@ -25,9 +25,9 @@ if (isset($_SESSION["documento"])) {
     <div class="container">
           <div class="jumbotron">
             <h1 class="display-3 animated fadeInDown">INICIO DE SESION</h1>
-            <p class="lead more">Si usted no cuenta con un usuario registrado, lo invitamos a que se registre ingresando al siguiente enlace <a href="registro.php">REGISTRARSE.</a> 
-                                Diligencie el formulario que aparece allí y asi posteriormente ingresar a la página. 
-                            Registrese en la pagina ingresando al enlace anterior o dirigiendose a la sección REGISTRAR del menú en la parte superior de la página. </p>
+            <p class="lead more">Si no cuentas con un usuario registrado,te invitamos a que te registres ingresando al siguiente enlace <a href="registro.php">REGISTRARSE.</a> 
+                               Allí Diligencia el formulario y asi posteriormente podras iniciar sesión. 
+                            Registrate en la pagina ingresando al enlace anterior o dirigiendose a la sección REGISTRARSE del menú en la parte superior. </p>
             <p class="lead">
             <a class="btn btn-success btn-lg" id="learn" href="#" id="leer" role="button">Leer más</a>
             </p>
