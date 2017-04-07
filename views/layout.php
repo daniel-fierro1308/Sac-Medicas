@@ -19,17 +19,20 @@
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="index.php">Sac-Medicas</a>
+  <a class="navbar-brand" href="index.php">Work</a>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav navbar-right pull-lg-right">
     <?php
     session_start();
       if (isset($_SESSION["documento"])) {
         echo '<li class="nav-item">
-        <a class="nav-link active" href="index.php">INICIO<span class="sr-only">(current)</span></a>
+        <a class="nav-link active" href="index_log.php">INICIO<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="#">MIS VIDEOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">MIS IMAGENES</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="#">MI INFORMACION</a>

@@ -12,8 +12,6 @@
     <?php
     require('layout.php');
     ?>
-
-    <button class="btn btn-success boton" role="button">Manual de usuario</button>
     <h1 style="color:#069;">CENTRO DE SALUD RAFAEL REYES</h1>
     
 <div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
