@@ -14,13 +14,14 @@
     ?>
    <!-- <h1 style="color:#069;">CENTRO DE SALUD RAFAEL REYES</h1> -->
     
-<div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
+<!--<div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li
+
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
@@ -44,7 +45,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-</div>
+</div>-->
     
     <div class="row content">
         <div class="col-md-12">

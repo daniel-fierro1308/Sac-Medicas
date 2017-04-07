@@ -24,7 +24,7 @@
     <ul class="navbar-nav navbar-right pull-lg-right">
     <?php
     session_start();
-      if (isset($_SESSION["documento"])) {
+      if (isset($_SESSION["usuario"])) {
         echo '<li class="nav-item">
         <a class="nav-link active" href="index_log.php">INICIO<span class="sr-only">(current)</span></a>
       </li>

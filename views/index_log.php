@@ -9,11 +9,11 @@
 <?php
  include('./controladores/conexion.php');
  include('layout.php');
-if(!isset($_SESSION["documento"])){
+if(!isset($_SESSION["usuario"])){
   header("location:../login.php");
 } else {
-$usuario = $_SESSION['documento']; 
-$consulta = "SELECT nombre,apellido FROM usuarios WHERE documento = '$usuario'";
+$usuario = $_SESSION['usuario']; 
+$consulta = "SELECT nombre,apellido FROM usuarios WHERE usuario = '$usuario'";
 $resultado = mysqli_query($con, $consulta);
 $row= mysqli_fetch_array($resultado);
 }

@@ -38,8 +38,8 @@ if (isset($_SESSION["documento"])) {
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="exampleSelect1">Numero de documento</label>
-                        <input type="number" class="form-control" id="documento" name="documento" aria-describedby="emailHelp" placeholder="Numero de Documento">                
+                        <label for="exampleSelect1">Nombre de usuario o correo</label>
+                        <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="Nombre de usuario">                
                     </div>
                 </div>
                 <div class="col-md-6">

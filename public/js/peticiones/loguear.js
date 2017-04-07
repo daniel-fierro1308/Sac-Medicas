@@ -10,13 +10,13 @@ function ocultar(){
     $('.more').toggle(1000);
 });
     $('#login').click(function(){
-      var documento = $('#documento').val();
+      var usuario = $('#usuario').val();
       var contrasena = $('#contrasena').val();
-      if($.trim(documento).length > 0 && $.trim(contrasena).length > 0){
+      if($.trim(usuario).length > 0 && $.trim(contrasena).length > 0){
         $.ajax({
           url:"./controladores/loguear.php",
           method:"POST",
-          data:{documento:documento, contrasena:contrasena},
+          data:{usuario:usuario, contrasena:contrasena},
           cache:"false",
           beforeSend:function() {
             $('#login').val("Conectando...");
