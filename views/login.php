@@ -1,5 +1,4 @@
 <?php
-session_start();
 if (isset($_SESSION["documento"])) {
   header("location:index_log.php");
 }
@@ -26,9 +25,9 @@ if (isset($_SESSION["documento"])) {
     <div class="container">
           <div class="jumbotron">
             <h1 class="display-3 animated fadeInDown">INICIO DE SESION</h1>
-            <p class="lead more">Si usted no cuenta con un usuario registrado, lo invitamos a que se registre ingresando al siguiente enlace <a href="registro.php">REGISTRARSE.</a> 
-                                Diligencie el formulario que aparece allí y asi posteriormente ingresar a la página. 
-                            Registrese en la pagina ingresando al enlace anterior o dirigiendose a la sección REGISTRAR del menú en la parte superior de la página. </p>
+            <p class="lead more">Si no cuentas con un usuario registrado,te invitamos a que te registres ingresando al siguiente enlace <a href="registro.php">REGISTRARSE.</a> 
+                               Allí Diligencia el formulario y asi posteriormente podras iniciar sesión. 
+                            Registrate en la pagina ingresando al enlace anterior o dirigiendose a la sección REGISTRARSE del menú en la parte superior. </p>
             <p class="lead">
             <a class="btn btn-success btn-lg" id="learn" href="#" id="leer" role="button">Leer más</a>
             </p>
@@ -39,8 +38,8 @@ if (isset($_SESSION["documento"])) {
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="exampleSelect1">Numero de documento</label>
-                        <input type="number" class="form-control" id="documento" name="documento" aria-describedby="emailHelp" placeholder="Numero de Documento">                
+                        <label for="exampleSelect1">Nombre de usuario o correo</label>
+                        <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="Nombre de usuario">                
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -59,7 +58,6 @@ if (isset($_SESSION["documento"])) {
 
 </body>
 <script src="../public/js/recursos/jquery.min.js"></script>
-<script src="../public/js/handlebars.js"></script>
 <script src="../public/js/login.js"></script>
 <script src="../public/js/peticiones/loguear.js"></script>
 </html>
