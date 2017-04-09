@@ -1,7 +1,7 @@
 <?php
-if (isset($_SESSION["documento"])) {
+/*if (isset($_SESSION["usuario"])) {
   header("location:index_log.php");
-}
+}*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,9 +55,12 @@ if (isset($_SESSION["documento"])) {
                 <small id="emailHelp" class="form-text text-muted"><a href="login.php">¿Olvidó su Contraseña?</a></small>
             </div>
     </form>
-
+    </div>
 </body>
 <script src="../public/js/recursos/jquery.min.js"></script>
 <script src="../public/js/login.js"></script>
 <script src="../public/js/peticiones/loguear.js"></script>
+  <?php 
+  require('footer.php');
+?>
 </html>

@@ -42,7 +42,9 @@
             </div>
         </div>
     </section>
-
+     <?php 
+  require('footer.php');
+?>
 </body>
 <script src="../public/js/recursos/jquery.min.js"></script>
 <script src="../public/js/quienes.js"></script>

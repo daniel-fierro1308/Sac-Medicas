@@ -10,16 +10,17 @@ h1 {
 text-align: center;
 color: #069;  
 }
-.slider {
-    width: 93%;
-    height: 80%;
-    margin: 0 auto 5% auto; 
-}
 
 .slider .image {
-    height: 500px;
-    width: 1200px;
+    width: 85%;
+    margin: auto;
+    height: 100%;
 }
+
+.slider .indicador {
+    width: 20%;
+}
+
 .content {
     margin: 4% 0 2% 0;
 }

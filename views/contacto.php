@@ -64,5 +64,8 @@
     </div>
     <script src="../public/js/recursos/jquery.min.js"></script>
     <script src="../public/js/peticiones/contacto.js"></script>
+       <?php 
+  require('footer.php');
+?>
 </body>
 </html>
