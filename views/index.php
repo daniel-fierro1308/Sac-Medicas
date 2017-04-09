@@ -12,17 +12,9 @@
     <?php
     require('layout.php');
     ?>
-    <!--<h1 style="color:#069;">CENTRO DE SALUD RAFAEL REYES</h1> -->
-    
-<!--<div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li
-  </ol>
 
+    
+<div id="carouselExampleControls" class="carousel slide slider" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <img class="d-block img-fluid image" src="../public/img/slider/imagen1.jpg" alt="First slide">
@@ -30,23 +22,21 @@
     <div class="carousel-item">
       <img class="d-block img-fluid image" src="../public/img/slider/imagen2.jpg" alt="Second slide">
     </div>
-    <div class="carousel-item">
+    <!--<div class="carousel-item">
       <img class="d-block img-fluid image" src="../public/img/slider/imagen3.jpg" alt="Third slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block img-fluid image" src="../public/img/slider/imagen4.jpg" alt="Fourth slide">
-    </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    </div>-->
+  </div>
+  <a class="carousel-control-prev indicador" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <a class="carousel-control-next indicador" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-</div>-->
-    
+</div>    
+
+
     <div class="row content">
         <div class="col-md-12">
         <h3 align="center">BIENVENIDOS A ESTE SITIO WEB</h3>
@@ -84,5 +74,8 @@ al sistema.<br><br><strong>En este sitio podras encontrar las siguientes funcion
     <script src="../public/js/recursos/jquery.min.js"></script>
    <script src="../public/js/recursos/wow.min.js"></script>
    <script src="../public/js/index.js"></script>
+   <?php 
+  require('footer.php');
+?>
 </body>
 </html>

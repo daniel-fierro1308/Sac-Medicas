@@ -6,33 +6,25 @@ text-align: center;
 }
 
 .footer h2 {
-	font: 20px 'Oswald', sans-serif;
+	font: 25px 'Oswald', sans-serif;
 	margin: 0;
+	margin-bottom: 0.6%;
 }
 
-.footer ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;	
-}
-
-.footer li {
-	flex-grow: 1;
-	text-align: center;
-}
-
-
-.footer li a {
+.footer a {
 	border-right: 1px solid #fff;
 	color: #fff;
 	display: block;
     font-size: 25px;
 	margin: 2% 0 2% 0;	
 	text-decoration: none;
-
 }
 
-.footer li a:hover {
+.footer a:hover {
 	color: #000;
+	text-decoration: none;
+}
+.footer a:visited {
+	color: #000;
+	text-decoration: none;
 }

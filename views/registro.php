@@ -93,5 +93,8 @@ Diligencia el formulario y asi posteriormente ingresar a la página.</p>
     <script src="../public/js/recursos/jquery.min.js"></script>
     <script src="../public/js/registro.js"></script>
     <script src="../public/js/peticiones/registrar.js"></script>
+       <?php 
+  require('footer.php');
+?>
 </body>
 </html>

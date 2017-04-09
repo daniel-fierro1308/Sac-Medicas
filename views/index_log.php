@@ -23,5 +23,9 @@ $row= mysqli_fetch_array($resultado);
   <strong><p id="user">Bienvenido! <?php echo $row['nombre']; ?>   <?php echo $row['apellido']; ?>  </p></strong>
   </div>
   </div>
+
+     <?php 
+  require('footer.php');
+?>
 </body>
 </html> 
