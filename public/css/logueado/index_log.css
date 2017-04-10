@@ -2,11 +2,15 @@
     color: #000;
 	text-decoration: none;
     float: right;
-    margin: 0 2% 0 0;
+    margin: 0 8% 0 0;
+}
+
+.slider {
+    margin-top: -4%;
 }
 
 .slider .image {
-    width: 85%;
+    width: 90%;
     margin: auto;
     height: 50%;
 }
@@ -21,7 +25,10 @@
 }
 
 .contenido h1 {
-    margin: 3% auto 2% auto;
+    margin: 0 auto 2% auto;
+}
+.contenido h5 {
+    margin: 1% 0 2% 0;
 }
 
 .intro {
@@ -29,6 +36,7 @@
     width: 80%;
     margin: 2% auto 0 auto;
 }
-.funcionalidades h5 {
-    margin: 2% 0 0 0;
+.imagen {
+    width: 60%;
+    height: 60%;
 }

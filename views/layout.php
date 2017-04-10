@@ -44,6 +44,9 @@
         <a class="nav-link active" href="#">MI INFORMACION</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link active" href="#">CONTACTARSE CON EL DESARROLLADOR</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link active" href="./controladores/logout.php">CERRAR SESION</a>
       </li>';
     } else {
