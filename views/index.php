@@ -17,14 +17,14 @@
 <div id="carouselExampleControls" class="carousel slide slider" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <img class="d-block img-fluid image" src="../public/img/slider/imagen1.jpg" alt="First slide">
+      <img class="d-block img-fluid image" src="../public/img/slider/reproductor.svg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block img-fluid image" src="../public/img/slider/imagen2.jpg" alt="Second slide">
+      <img class="d-block img-fluid image" src="../public/img/slider/visor.svg" alt="Second slide">
     </div>
-    <!--<div class="carousel-item">
-      <img class="d-block img-fluid image" src="../public/img/slider/imagen3.jpg" alt="Third slide">
-    </div>-->
+    <div class="carousel-item">
+      <img class="d-block img-fluid image" src="../public/img/slider/desarrollo.svg" alt="Third slide">
+    </div>
   </div>
   <a class="carousel-control-prev indicador" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -43,7 +43,7 @@
 <p align="center" class="intro">Aquí podras guardar tu contenido multimedia,
 incluyendo imagenes y videos para que los puedas observar cuando quieras,tambien podras actualizar tu información personal.
  Para ello deberas de registrarte en el sitio web y posteriormente ingresar
-al sistema.<br><br><strong>En este sitio podras encontrar las siguientes funcionalidades:</strong></p> 
+al sistema.<br><br><strong>Aquí podras encontrar las siguientes funcionalidades:</strong></p> 
         </div>
     </div>  
       
@@ -69,6 +69,12 @@ al sistema.<br><br><strong>En este sitio podras encontrar las siguientes funcion
             quejas o reclamos y recomendaciones que tengas para nosotros.
             Tambien podras encontrar un mapa con nuestra ubicación por si deseas acercarte.</p></div>
             </div>
+            </div>
+
+            <div class="row logueate">
+              <div class="col-md-12">
+                <h5 align="center">¡Asi que Registrate para disfrutar de todo lo que te ofrecemos!</h5>
+              </div>
             </div>
 
     <script src="../public/js/recursos/jquery.min.js"></script>

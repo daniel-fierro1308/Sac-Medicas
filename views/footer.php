@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../public/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="footer" align="center" style="margin-top:5%">
+    <div class="footer" align="center">
         <footer>
         <h2>Contactate por Redes sociales</h2>
            <div class="row">

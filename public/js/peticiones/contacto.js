@@ -1,3 +1,8 @@
+function tiempo(){
+    setTimeout(function(){
+        document.getElementById('resultado').innerHTML = "";
+    },2000);
+}
 $(document).ready(function(){
     $('#contacto').click(function(){
         var nombre = $('#nombre').val(),
@@ -7,22 +12,14 @@ $(document).ready(function(){
             asunto = $('#asunto').val(),
             mensaje = $('#mensaje').val();
 
-    if(nombre == ''){
-        $('#nombre').focus();
+    if(nombre == '' || telefono == '' || asunto == '' ||mensaje == ''){
+         $('#resultado').html("<div class='alert alert-danger'>Por Favor complete todos los campos</div>");
+         tiempo();      
         return false;
     } else if(email == '' || !validar_email.test(email)){
         $('#email').focus();
         return false;
-    } else if(telefono == ''){
-         $('#telefono').focus();
-        return false;
-    } else if(asunto == ''){
-        $('#asunto').focus();
-        return false;
-    } else if(mensaje == ''){
-        $('#mensaje').focus();
-        return false;
-    } else {
+    }  else {
         $.ajax({
             type: 'POST',
             url: './controladores/contactar.php',
@@ -35,9 +32,11 @@ $(document).ready(function(){
                 $('#contacto').val('Enviar Mensaje');
                 if(data){
                     $('#resultado').html(data);
-                    $('input').val('');
-                } else {
+                    $('.msg').val('');
+                    tiempo();
+                    } else {
                     $('#resultado').html("<div class='alert alert-dismissible alert-danger'><strong>¡Error!</strong> no se ha enviado su mensaje.</div>");
+                    tiempo();
                 }
             },
         });

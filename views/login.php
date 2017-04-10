@@ -1,8 +1,3 @@
-<?php
-/*if (isset($_SESSION["usuario"])) {
-  header("location:index_log.php");
-}*/
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

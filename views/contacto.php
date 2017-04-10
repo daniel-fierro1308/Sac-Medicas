@@ -23,13 +23,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre:(s)">
+                            <input type="text" id="nombre" name="nombre" class="form-control msg" placeholder="Nombre:(s)">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>E-mail:</label>
-                            <input type="text" id="email" name="email" class="form-control" placeholder="E-mail">
+                            <input type="text" id="email" name="email" class="form-control msg" placeholder="E-mail">
                         </div>
                     </div>
                 </div>
@@ -38,13 +38,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Teléfono:</label>
-                            <input type="number" id="telefono" name="telefono" class="form-control" placeholder="Telefono">
+                            <input type="number" id="telefono" name="telefono" class="form-control msg" placeholder="Telefono">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Asunto:</label>
-                            <input type="text" id="asunto" name="asunto" class="form-control" placeholder="Asunto">
+                            <input type="text" id="asunto" name="asunto" class="form-control msg" placeholder="Asunto">
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="exampleTextarea">Mensaje:</label>
-                            <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+                            <textarea class="form-control msg" id="mensaje" name="mensaje" rows="3"></textarea>
                         </div>
                     </div> 
                 </div>
