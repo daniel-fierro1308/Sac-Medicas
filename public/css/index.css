@@ -2,13 +2,10 @@
     margin: 0 0 0 10%;
 }
 
-h1 {
-text-align: center;
-color: #069;  
-}
-
 .slider {
-    margin-top: -5%;
+    width: 95%;
+    margin: -5% auto 0 auto;
+    height: 80%;
 }
 
 .slider .image {
@@ -22,7 +19,7 @@ color: #069;
 }
 
 .content {
-    margin: 4% 0 2% 0;
+    margin: 0 0 2% 0;
 }
 .intro {
     font-size: 20px;
@@ -42,7 +39,15 @@ color: #069;
 .logueate {
     background-color: #1C3A4D;
 }
+
 .logueate h5{
     color: #fff;
     width: 100%;
+}
+.logueate a {
+    color: #fff;
+}
+.logueate a:hover {
+    text-decoration: none;
+    color: #fff;
 }

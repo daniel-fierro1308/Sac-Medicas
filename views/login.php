@@ -20,13 +20,14 @@
     <div class="container">
           <div class="jumbotron">
             <h1 class="display-3 animated fadeInDown">INICIO DE SESION</h1>
-            <p class="lead more">Si no cuentas con un usuario registrado,te invitamos a que te registres ingresando al siguiente enlace <a href="registro.php">REGISTRARSE.</a> 
-                               Allí Diligencia el formulario y asi posteriormente podras iniciar sesión. 
-                            Registrate en la pagina ingresando al enlace anterior o dirigiendose a la sección REGISTRARSE del menú en la parte superior. </p>
-            <p class="lead">
-            <a class="btn btn-success btn-lg" id="learn" href="#" id="leer" role="button">Leer más</a>
-            </p>
+            <a class="btn btn-success btn-lg" id="ver" role="button" data-toggle="collapse" href="#leer" aria-expanded="false" aria-controls="leer" role="button">Leer más</a>
+            <div class="lead collapse" id="leer" align="center">
+                Si no cuentas con un usuario registrado,te invitamos a que te registres ingresando al siguiente enlace <a href="registro.php">REGISTRARSE.</a> 
+                Allí Diligencia el formulario y asi posteriormente podras iniciar sesión. 
+                Registrate en la pagina ingresando al enlace anterior o dirigiendose a la sección REGISTRARSE del menú en la parte superior. 
+            </div>
         </div>
+
         <div id="alerta" align="center"></div>
         <div id="result" align="center"></div>
         <form method="post">

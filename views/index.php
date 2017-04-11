@@ -73,7 +73,7 @@ al sistema.<br><br><strong>Aquí podras encontrar las siguientes funcionalidades
 
             <div class="row logueate">
               <div class="col-md-12">
-                <h5 align="center">¡Asi que Registrate para disfrutar de todo lo que te ofrecemos!</h5>
+                <h5 align="center"><a href="registro.php">¡Asi que Registrate para disfrutar de todo lo que te ofrecemos!</a></h5>
               </div>
             </div>
 

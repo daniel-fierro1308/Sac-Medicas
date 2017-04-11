@@ -4,12 +4,7 @@
         },2000);
     }
     
-    $(document).ready(function(){
-            $('.more').hide();
-            $('#learn').click(function(){
-                $('.more').toggle(1000);
-            });
-            
+    $(document).ready(function(){            
             $('#enviar').click(function(){
                 var nombre, apellido, usuario, telefono, correo, contrasena, re_contrasena;
                 nombre = $('#nombre').val();

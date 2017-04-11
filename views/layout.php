@@ -41,7 +41,7 @@
         <a class="nav-link active" href="#">MIS IMAGENES</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">MI INFORMACION</a>
+        <a class="nav-link active" href="info.php">MI INFORMACION</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="#">CONTACTARSE CON EL DESARROLLADOR</a>

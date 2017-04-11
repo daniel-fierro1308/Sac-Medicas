@@ -5,10 +5,6 @@ function ocultar(){
 }
 
   $(document).ready(function(){
-    $('.more').hide();
-    $('#learn').click(function(){
-    $('.more').toggle(1000);
-});
     $('#login').click(function(){
       var usuario = $('#usuario').val();
       var contrasena = $('#contrasena').val();

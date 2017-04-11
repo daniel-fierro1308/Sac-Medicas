@@ -19,17 +19,15 @@
         require('layout.php');
     ?>
     <div class="container">
-    <div class="jumbotron">
-  <h1 class="display-3 animated fadeInLeft">REGISTRO DE USUARIOS</h1>
-  <p class="lead more">Si no cuentas con un usuario registrado, te invitamos a que te registres ingresando tu información personal en el siguiente formulario.
-<br>
-Diligencia el formulario y asi posteriormente ingresar a la página.</p>
+        <div class="jumbotron">
+            <h1 class="display-3 animated fadeInLeft">REGISTRO DE USUARIOS</h1>
+            <a class="btn btn-success btn-lg" data-toggle="collapse" href="#leer" id="ver" aria-expanded="false" aria-controls="leer" role="button">Leer más</a>
+            <div class="lead collapse" id="leer" align="center">    
+                    Si no cuentas con un usuario registrado, te invitamos a que te registres ingresando tu información personal en el siguiente formulario.
+                    Diligencia el formulario y asi posteriormente ingresar a la página.
+                    Registrandote podras ingresar y posteriormente podras acceder a los servicios que ofrecemos y a las distintas funciones que se encuentran allí.</div>
+            </div>
 
-<p class="lead more">Registrandote podras ingresar y posteriormente podras acceder a los servicios que ofrecemos y a las distintas funciones que se encuentran allí.</p>
-  <p class="lead">
-    <a class="btn btn-success btn-lg" id="learn" href="#" id="leer" role="button">Leer más</a>
-  </p>
-</div>
     <div id="alerta" align="center"></div>
     <div id="result" align="center"></div>
     <form method="post">
