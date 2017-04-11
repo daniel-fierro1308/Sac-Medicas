@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mi Información</title>
+    <link rel="stylesheet" href="../public/css/logueado/info.css">
 </head>
 <body>
 <?php 
@@ -41,13 +42,13 @@
     <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Telefono</label>
-                <input type="number" class="form-control" id="telefono" name="telefono" aria-describedby="emailHelp" value="<?php echo $datos['telefono']; ?>" placeholder="Telefono">
+                <input type="number" class="form-control" id="telefono" name="telefono" aria-describedby="emailHelp" value="<?php echo $datos['telefono']; ?>" placeholder="Telefono" disabled>
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Correo</label>
-                <input type="text" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Correo" value="<?php echo $datos['correo']; ?>">
+                <input type="text" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Correo" value="<?php echo $datos['correo']; ?>" disabled>
             </div>
         </div>
     </div>
@@ -60,7 +61,34 @@
             </div>
         </div>
     </div>
+    <button type="button" class="btn btn-primary" id="enviar" role="button" name="enviar">Actualizar Información</button>
+     <button type="button" class="btn btn-success" id="validar" role="button" name="validar">Validar Información</button>
+    <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input" id="cambio">
+      Cambiar Contraseña
+    </label>
+  </div>    
+   
+   <div class="row">
+    <div class="col-md-4">
+        <input type="password" id="antigua" name="antigua" class="cambiar form-control" placeholder="Contraseña actual">
+    </div>
+    <div class="col-md-4">
+        <input type="password" id="nueva" name="nueva" class="cambiar form-control" placeholder="Nueva Contraseña">
+    </div> 
+    <div class="col-md-4">
+        <input type="password" id="repetir" name="repetir" class="cambiar form-control" placeholder="Repetir Contraseña">
+    </div>
+   </div> 
+    <button type="button" class="btn btn-success cambiar" id="validar_contra" role="button" name="validar_contra">Cambiar Contraseña</button>
 </form>
 </div>
+
+<script src="../public/js/info.js"></script>
+
+<?php
+    require('footer.php');
+?>
 </body>
 </html>

@@ -55,8 +55,8 @@
         </div>
         <div class="col-md-6">
             <div class="form-group">
-                <label for="exampleInputEmail1">Correo</label>
-                <input type="text" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Correo" onblur="revisar(this); revisaremail();">
+                <label for="exampleInputEmail1">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="Usuario" onblur="revisar(this);">
             </div>
         </div>
     </div>
@@ -64,8 +64,8 @@
      <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="exampleSelect1">Usuario</label>
-                <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="Usuario" onblur="revisar(this)">                
+                <label for="exampleSelect1">Correo</label>
+                <input type="text" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Correo" onblur="revisar(this); revisaremail();">                
             </div>
         </div>
     </div>

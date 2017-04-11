@@ -1,0 +1,16 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+#enviar {
+    margin-bottom: 2%;
+}
+
+#validar {
+    margin-bottom: 2%;
+}
+
+#validar_contra {
+    margin: 2% 0 2% 0;
+}
