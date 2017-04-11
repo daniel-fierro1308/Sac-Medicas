@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../public/css/index.css">
-    <link rel="stylesheet" href="../public/css/animate.css">
     <title>Reproduction</title>
 </head>
 <body>
@@ -50,22 +49,22 @@ al sistema.<br><br><strong>Aquí podras encontrar las siguientes funcionalidades
         <div class="row">
         <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
         <h5 align="center"><strong style="color: #069">INICIAR SESION</strong></h5>
-         <div align="center"><img src="../public/img/info/iniciar_sesion.png" class="imagen" id="login" title="Click Aquí!"></div>
-            <div class="text" align="center"><p id="login1">Allí podras ingresar y guardar tu contenido,
+         <div align="center"><img src="../public/img/info/iniciar_sesion.png" class="imagen" id="login" title="Click Aquí!" data-toggle="collapse" href="#login1" aria-expanded="false" aria-controls="login1" role="button"></div>
+            <div class="text collapse animated fadeInLeft" align="center" id="login1"><p>Allí podras ingresar y guardar tu contenido,
                 actualizar tu información personal y cambiar tu contraseña. 
                  Para ello deberas haberte registrado anteriormente en el Sitio Web.</p></div>
         </div>
         <div class="col-md-4 wow fadeInDown" data-wow-delay="1.2s">
         <h5 align="center"><strong style="color: #069">REGISTRO</strong></h5>                    
-           <div align="center"><img src="../public/img/info/register.png" class="imagen" id="registro" title="Click Aquí!"></div>
-            <div class="text" align="center"><p id="registro1">Para poder ingresar debes de estar registrado 
+           <div align="center"><img src="../public/img/info/register.png" class="imagen" id="registro" title="Click Aquí!" data-toggle="collapse" href="#registro1" aria-expanded="false" aria-controls="registro1" role="button"></div>
+            <div class="text collapse animated fadeInDown" align="center" id="registro1"><p>Para poder ingresar debes de estar registrado 
                 en el Sitio Web,por eso deberas diligenciar el formulario que aparece allí con la respectiva información que se solicita.</p></div>
         </div>
 
         <div class="col-md-4 wow fadeInRight" data-wow-delay="1.7s">
         <h5 align="center"><strong style="color: #069">CONTACTO</strong></h5> 
-           <div align="center"><img src="../public/img/info/contact_image.png" class="imagen" id="contacto" title="Click Aquí!"></div>
-            <div class="text" align="center"><p id="contacto1">Por este medio podras hacernos saber tus dudas,
+           <div align="center"><img src="../public/img/info/contact_image.png" class="imagen" id="contacto" title="Click Aquí!" data-toggle="collapse" href="#contacto1" aria-expanded="false" aria-controls="contacto1" role="button"></div>
+            <div class="text collapse animated fadeInRight" align="center" id="contacto1"><p>Por este medio podras hacernos saber tus dudas,
             quejas o reclamos y recomendaciones que tengas para nosotros.
             Tambien podras encontrar un mapa con nuestra ubicación por si deseas acercarte.</p></div>
             </div>
@@ -78,8 +77,6 @@ al sistema.<br><br><strong>Aquí podras encontrar las siguientes funcionalidades
             </div>
 
     <script src="../public/js/recursos/jquery.min.js"></script>
-   <script src="../public/js/recursos/wow.min.js"></script>
-   <script src="../public/js/index.js"></script>
    <?php 
   require('footer.php');
 ?>

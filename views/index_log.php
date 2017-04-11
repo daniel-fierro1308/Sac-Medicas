@@ -62,25 +62,24 @@ $row= mysqli_fetch_array($resultado);
   <div class="row">
     <div class="col-md-4">
       <h5 align="center"><strong style="color: #069">Guardar Videos</strong></h5>
-     <div align="center"><img src="../public/img/logueado/videos_v.png" alt="visor de videos" class="imagen" id="videos"></div>
-     <div class="text" align="center"><p id="videos1">Aqui podras guardar tus videos favoritos y verlos, tambien podras guardar los videos de Youtube que mas te gusten, podras agregarle un titulo y una descripción si así lo deseas.</p></div>
+     <div align="center"><img src="../public/img/logueado/videos_v.png" alt="visor de videos" class="imagen" id="videos" title="Click Aquí!" data-toggle="collapse" href="#videos1" aria-expanded="false" aria-controls="videos1" role="button"></div>
+     <div class="text collapse" align="center" id="videos1"><p>Aqui podras guardar tus videos favoritos y verlos, tambien podras guardar los videos de Youtube que mas te gusten, podras agregarle un titulo y una descripción si así lo deseas.</p></div>
     </div>
 
     <div class="col-md-4">
       <h5 align="center"><strong style="color: #069">Guardar Imagenes</strong></h5>     
-      <div align="center"><img src="../public/img/logueado/imagenes.png" alt="ver imagenes" class="imagen" id="imagen"></div> 
-      <div class="text" align="center"><p id="imagen1">Aqui podras guardar tus imagenes favoritas,verlas y descargarlas en el momento en que lo necesites,podras agregarle un titulo y una descripcion si asi lo deseas.</p></div>
+      <div align="center"><img src="../public/img/logueado/imagenes.png" alt="ver imagenes" class="imagen" id="imagen" title="Click Aquí!" data-toggle="collapse" href="#imagen1" aria-expanded="false" aria-controls="imagen1" role="button"></div> 
+      <div class="text collapse" align="center" id="imagen1"><p>Aqui podras guardar tus imagenes favoritas,verlas y descargarlas en el momento en que lo necesites,podras agregarle un titulo y una descripcion si asi lo deseas.</p></div>
     </div>
     <div class="col-md-4">
       <h5 align="center"><strong style="color: #069">Ver mi Información</strong></h5>
-      <div align="center"><img src="../public/img/logueado/info.png" alt="ver información" class="imagen" id="informacion"></div>
-      <div class="text" align="center"><p id="informacion1">Aqui podras ver tu informacion, la cual ingresaste al momento de registrarte, ademas de esto podras editarla, tambien allí podras cambiar tu contraseña si así lo deseas.</p></div>
+      <div align="center"><img src="../public/img/logueado/info.png" alt="ver información" class="imagen" id="informacion" title="Click Aquí!" data-toggle="collapse" href="#informacion1" aria-expanded="false" aria-controls="informacion1" role="button"></div>
+      <div class="text collapse" align="center" id="informacion1"><p>Aqui podras ver tu informacion, la cual ingresaste al momento de registrarte, ademas de esto podras editarla, tambien allí podras cambiar tu contraseña si así lo deseas.</p></div>
     </div>
   </div>
   <?php
     require('footer.php');
    ?>
   <script src="../public/js/recursos/jquery.min.js"></script>
-  <script src="../public/js/index_log.js"></script>
 </body>
 </html> 

@@ -73,5 +73,9 @@
 <script src="../public/js/recursos/jquery.min.js"></script>
 <script src="../public/js/recursos/bootstrap.min.js"></script>
 <script src="../public/js/recursos/handlebars.js"></script>
+<script src="../public/js/recursos/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>
