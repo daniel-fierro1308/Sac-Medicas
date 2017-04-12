@@ -56,7 +56,7 @@
      <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="exampleSelect1">Usuario</label>
+                <label for="exampleSelect1">Nombre de Usuario</label>
                 <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="Usuario" value="<?php echo $datos['usuario']; ?>" disabled>                
             </div>
         </div>

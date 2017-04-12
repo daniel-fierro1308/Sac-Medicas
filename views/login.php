@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-=======
-<!--if (isset($_SESSION["usuario"])) {
-  header("location:index_log.php");
-}-->
->>>>>>> Stashed changes
 <!DOCTYPE html>
 <html lang="en">
 <head>
