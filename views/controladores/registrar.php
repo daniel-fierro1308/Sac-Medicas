@@ -21,8 +21,7 @@
       if ($data > 0) {
         $alerta .= " El correo ingresado ya está registrado";
       }
-  
- 
+
   if ($alerta != "") {
     echo "<div class='alert alert-dismissible alert-danger'><strong>Error </strong>$alerta </div>";
   } else {

@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>Mi Información</title>
     <link rel="stylesheet" href="../public/css/logueado/info.css">
+
+     <template id="mensaje">
+        <div class="alert alert-{{type}}" role="alert">
+            {{body}}
+        </div>
+    </template>
+
 </head>
 <body>
 <?php 
@@ -22,19 +29,20 @@
             </div>
         </div>
 
-
+        <div id="alerta" align="center"></div>
+        <div id="result" align="center"></div>
         <form method="post">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Nombre(s):</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp" value="<?php echo $datos['nombre']; ?>" placeholder="Nombre(s)" disabled>
+                <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $datos['nombre']; ?>" placeholder="Nombre(s)" disabled>
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Apellido(s):</label>
-                <input type="text" class="form-control" id="apellido" name="apellido" aria-describedby="emailHelp" value="<?php echo $datos['apellido']; ?>" placeholder="Apellido(s)" disabled>
+                <input type="text" class="form-control" id="apellido" name="apellido" value="<?php echo $datos['apellido']; ?>" placeholder="Apellido(s)" disabled>
             </div>
         </div>
     </div>
@@ -42,13 +50,13 @@
     <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Telefono</label>
-                <input type="number" class="form-control" id="telefono" name="telefono" aria-describedby="emailHelp" value="<?php echo $datos['telefono']; ?>" placeholder="Telefono" disabled>
+                <input type="number" class="form-control" id="telefono" name="telefono" value="<?php echo $datos['telefono']; ?>" placeholder="Telefono" disabled onblur="revisar(this)">
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Correo</label>
-                <input type="text" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Correo" value="<?php echo $datos['correo']; ?>" disabled>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" value="<?php echo $datos['correo']; ?>" disabled onblur="revisar(this); revise_correo();">
             </div>
         </div>
     </div>
@@ -57,12 +65,20 @@
         <div class="col-md-12">
             <div class="form-group">
                 <label for="exampleSelect1">Nombre de Usuario</label>
-                <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="Usuario" value="<?php echo $datos['usuario']; ?>" disabled>                
+                <input type="text" class="form-control" id="user" name="user" placeholder="Usuario" value="<?php echo $datos['usuario']; ?>" disabled onblur="revisar(this)">                
             </div>
         </div>
     </div>
     <button type="button" class="btn btn-primary" id="enviar" role="button" name="enviar">Actualizar Información</button>
-     <button type="button" class="btn btn-success" id="validar" role="button" name="validar">Validar Información</button>
+    <div class="row">
+        <div class="col-md-2">
+            <button type="button" class="btn btn-success" id="validar" role="button" name="validar" onclick = "validar_datos()">Validar Información</button>
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger" id="cancelar" role="button" name="cancelar">Cancelar</button>
+        </div>
+    </div>
+
     <div class="form-check">
     <label class="form-check-label">
       <input type="checkbox" class="form-check-input" id="cambio">
@@ -72,20 +88,21 @@
    
    <div class="row">
     <div class="col-md-4">
-        <input type="password" id="antigua" name="antigua" class="cambiar form-control" placeholder="Contraseña actual">
+        <input type="password" id="antigua" name="antigua" class="cambiar form-control vacio" placeholder="Contraseña actual">
     </div>
     <div class="col-md-4">
-        <input type="password" id="nueva" name="nueva" class="cambiar form-control" placeholder="Nueva Contraseña">
+        <input type="password" id="nueva" name="nueva" class="cambiar form-control vacio" placeholder="Nueva Contraseña">
     </div> 
     <div class="col-md-4">
-        <input type="password" id="repetir" name="repetir" class="cambiar form-control" placeholder="Repetir Contraseña">
+        <input type="password" id="repetir" name="repetir" class="cambiar form-control vacio" placeholder="Repetir Contraseña">
     </div>
    </div> 
-    <button type="button" class="btn btn-success cambiar" id="validar_contra" role="button" name="validar_contra">Cambiar Contraseña</button>
+    <button type="button" class="btn btn-success cambiar" id="validar_contras" role="button" name="validar_contras" onclick = "validar_contra()">Cambiar Contraseña</button>
 </form>
 </div>
 
-<script src="../public/js/info.js"></script>
+<script src="../public/js/peticiones/info.js"></script>
+<script src="../public/js/validar_info.js"></script>
 
 <?php
     require('footer.php');

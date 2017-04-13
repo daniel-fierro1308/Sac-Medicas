@@ -65,7 +65,7 @@
         <div class="col-md-12">
             <div class="form-group">
                 <label for="exampleSelect1">Correo</label>
-                <input type="text" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Correo" onblur="revisar(this); revisaremail();">                
+                <input type="email" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Correo" onblur="revisar(this); revisaremail();">                
             </div>
         </div>
     </div>

@@ -47,21 +47,21 @@ al sistema.<br><br><strong>Aquí podras encontrar las siguientes funcionalidades
     </div>  
       
         <div class="row">
-        <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
+        <div class="col-md-4">
         <h5 align="center"><strong style="color: #069">INICIAR SESION</strong></h5>
          <div align="center"><img src="../public/img/info/iniciar_sesion.png" class="imagen" id="login" title="Click Aquí!" data-toggle="collapse" href="#login1" aria-expanded="false" aria-controls="login1" role="button"></div>
             <div class="text collapse animated fadeInLeft" align="center" id="login1"><p>Allí podras ingresar y guardar tu contenido,
                 actualizar tu información personal y cambiar tu contraseña. 
                  Para ello deberas haberte registrado anteriormente en el Sitio Web.</p></div>
         </div>
-        <div class="col-md-4 wow fadeInDown" data-wow-delay="1.2s">
+        <div class="col-md-4">
         <h5 align="center"><strong style="color: #069">REGISTRO</strong></h5>                    
            <div align="center"><img src="../public/img/info/register.png" class="imagen" id="registro" title="Click Aquí!" data-toggle="collapse" href="#registro1" aria-expanded="false" aria-controls="registro1" role="button"></div>
             <div class="text collapse animated fadeInDown" align="center" id="registro1"><p>Para poder ingresar debes de estar registrado 
                 en el Sitio Web,por eso deberas diligenciar el formulario que aparece allí con la respectiva información que se solicita.</p></div>
         </div>
 
-        <div class="col-md-4 wow fadeInRight" data-wow-delay="1.7s">
+        <div class="col-md-4">
         <h5 align="center"><strong style="color: #069">CONTACTO</strong></h5> 
            <div align="center"><img src="../public/img/info/contact_image.png" class="imagen" id="contacto" title="Click Aquí!" data-toggle="collapse" href="#contacto1" aria-expanded="false" aria-controls="contacto1" role="button"></div>
             <div class="text collapse animated fadeInRight" align="center" id="contacto1"><p>Por este medio podras hacernos saber tus dudas,

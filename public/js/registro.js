@@ -52,11 +52,13 @@ function validar() {
        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'El correo ingresado no es válido'});
        tiempo();
        return false;
+
    } else if(!passExp.test(contrasena.value)){
        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'La contraseña ingresada no es válida'});
         $(':password').val('');
          tiempo();
          return false;
+         
    } else if(contrasena.value != re_contrasena.value) {
        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'Las contraseñas no coinciden, por favor vuelva a intentar'});
         $(':password').val('');
