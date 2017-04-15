@@ -65,7 +65,7 @@
         <div class="col-md-12">
             <div class="form-group">
                 <label for="exampleSelect1">Correo</label>
-                <input type="email" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Correo" onblur="revisar(this); revisaremail();">                
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" onblur="revisar(this); revisaremail();">                
             </div>
         </div>
     </div>
@@ -89,8 +89,9 @@
 </form>
 </div>
     <script src="../public/js/recursos/jquery.min.js"></script>
-    <script src="../public/js/registro.js"></script>
     <script src="../public/js/peticiones/registrar.js"></script>
+    <script src="../public/js/registro.js"></script>
+    
        <?php 
   require('footer.php');
 ?>

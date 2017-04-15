@@ -37,10 +37,11 @@ function validar_datos() {
         temporal();
         return false;
     } else if(!exp_correo.test(correo.value)){
-        document.getElementById('alerta').innerHTML = render({type: 'danger', body: 'Por favor ingrese un correo valido'});
-        temporal();
-        return false;
-    }
+        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'El correo ingresado no es valido'});
+       $('#correo').val('');
+       temporal(); 
+       return false;  
+   }
 }
 
 function validar_contra() {

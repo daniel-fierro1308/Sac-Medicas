@@ -49,9 +49,11 @@ function validar() {
         return false;
 
    } else if(!expresion.test(correo.value)){
-       document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'El correo ingresado no es válido'});
-       tiempo();
-       return false;
+        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'El correo ingresado no es valido'});
+       $('#correo').val('');
+       tiempo(); 
+       return false;  
+            
 
    } else if(!passExp.test(contrasena.value)){
        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'La contraseña ingresada no es válida'});
@@ -64,8 +66,5 @@ function validar() {
         $(':password').val('');
         tiempo();
         return false;
-    }
+    } 
 }
-
-
-

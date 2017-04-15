@@ -1,8 +1,14 @@
+function tiempo(){
+    setTimeout(function(){
+        document.getElementById('result').innerHTML = "";
+    },2000);
+}
+
 $(document).ready(function(){
     $('#cancelar, #validar').hide();
     $('#enviar').click(function(){
         $('#telefono, #correo').prop('disabled',false);
-         $('#telefono, #correo').val('');
+        //  $('#telefono, #correo').val('');
         $('#enviar').hide();
         $('#validar, #cancelar').show();
     });
@@ -38,8 +44,17 @@ $(document).ready(function(){
             $('#validar').val('Validar Información');
             if(data){
                 $('#result').html(data);
-            }
-       }
+                tiempo();
+                $('#telefono, #correo').prop('disabled',true);
+                 $('#telefono, #correo').addClass('bien');
+                $('#validar, #cancelar').hide();
+                 $('#enviar').show();
+            } else {
+                $("#result").html("<div class='alert alert-dismissible alert-danger'><strong>¡Error!</strong>No se ha podido registrar correctamente.</div>");
+              }    
+       },error:function(err){
+          $('#result').html(err);
+          }
         });
     }
 });

@@ -103,6 +103,7 @@
 
 <script src="../public/js/peticiones/info.js"></script>
 <script src="../public/js/validar_info.js"></script>
+<script src="../public/js/peticiones/cambio_contra.js"></script>
 
 <?php
     require('footer.php');

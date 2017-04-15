@@ -28,9 +28,15 @@
                             $('#enviar').val('Registrarme');
                             if(data){
                                 $('#result').html(data);
-                                $('input').val('');
                                 desaparecer();
-                            };    
+                                $('input').addClass('bien');
+                                $('input').val('');
+                            } else {
+                                $("#result").html("<div class='alert alert-dismissible alert-danger'><strong>¡Error!</strong>No se ha podido registrar correctamente.</div>");
+                                desaparecer();
+                            }    
+                        }, error:function(err){
+                            $('#result').html(err);
                         }
                     });
                 }; 
