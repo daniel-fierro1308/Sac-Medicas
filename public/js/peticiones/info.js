@@ -8,7 +8,6 @@ $(document).ready(function(){
     $('#cancelar, #validar').hide();
     $('#enviar').click(function(){
         $('#telefono, #correo').prop('disabled',false);
-        //  $('#telefono, #correo').val('');
         $('#enviar').hide();
         $('#validar, #cancelar').show();
     });
@@ -38,10 +37,10 @@ $(document).ready(function(){
        data: {telefono:telefono, correo:correo},
        cache: false,
        beforeSend: function(){
-           $('#validar').val('Validando la informacion');
+           $('#validar').html('Validando...');
        }, 
        success: function(data){
-            $('#validar').val('Validar Información');
+            $('#validar').html('Validar Información');
             if(data){
                 $('#result').html(data);
                 tiempo();

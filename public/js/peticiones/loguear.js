@@ -15,10 +15,10 @@ function ocultar(){
           data:{usuario:usuario, contrasena:contrasena},
           cache:"false",
           beforeSend:function() {
-            $('#login').val("Conectando...");
+            $('#login').html("Conectando...");
           },
           success:function(data) {
-            $('#login').val("Login");
+            $('#login').html("Login");
             if (data=="1") {
               $(location).attr('href','index_log.php');
             } else {

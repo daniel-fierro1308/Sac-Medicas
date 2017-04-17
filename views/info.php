@@ -16,10 +16,14 @@
 <?php 
     require('./controladores/conexion.php'); 
     require('layout.php');
+    if(!isset($_SESSION["usuario"])){
+  header("location: login.php");
+} else {
     $usuario = $_SESSION['usuario'];
     $query= "SELECT * FROM usuarios WHERE usuario = '$usuario'";
     $registro=mysqli_query($con,$query);
     $datos = mysqli_fetch_array($registro); 
+    }
 ?>
      <div class="container">
         <div class="jumbotron jumbotron-fluid">

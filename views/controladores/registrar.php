@@ -1,5 +1,6 @@
 <?php 
       include('conexion.php');  
+    sleep(2);
     $nombre = mysqli_real_escape_string($con, $_POST["nombre"]); 
     $apellido = mysqli_real_escape_string($con, $_POST["apellido"]);
     $usuario = mysqli_real_escape_string($con, $_POST["usuario"]);

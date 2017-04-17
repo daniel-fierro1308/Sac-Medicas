@@ -1,5 +1,6 @@
 <?php
     include('conexion.php');
+    sleep(2);
     session_start();
     $telefono = mysqli_real_escape_string($con, $_POST["telefono"]);
     $correo = mysqli_real_escape_string($con, $_POST["correo"]);
@@ -9,7 +10,9 @@
     $sql = "SELECT correo FROM usuarios WHERE correo= '$correo'";
     $res = mysqli_query($con, $sql);
     $data = mysqli_fetch_array($res);
-    
+        
+
+
     if($alerta != ""){
         echo "<div class='alert alert-dismissible alert-danger'><strong>Error </strong>$alerta</div>";
     } else {

@@ -22,10 +22,10 @@
                         data: {nombre:nombre, apellido:apellido, usuario:usuario, telefono:telefono, correo:correo, contrasena:contrasena, re_contrasena:re_contrasena},
                         cache: false,
                         beforeSend:function(){
-                            $('#enviar').val('Comprobando la informacion...');
+                            $('#enviar').html('Comprobando la informacion...');
                         }, 
                         success:function(data){
-                            $('#enviar').val('Registrarme');
+                            $('#enviar').html('Registrarme');
                             if(data){
                                 $('#result').html(data);
                                 desaparecer();

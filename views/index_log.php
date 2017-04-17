@@ -10,7 +10,7 @@
  include('./controladores/conexion.php');
  include('layout.php');
 if(!isset($_SESSION["usuario"])){
-  header("location:../login.php");
+  header("location: login.php");
 } else {
 $usuario = $_SESSION['usuario']; 
 $consulta = "SELECT nombre,apellido FROM usuarios WHERE usuario = '$usuario'";
