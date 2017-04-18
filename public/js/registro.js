@@ -38,31 +38,31 @@ function revisarContra() {
 
 function tiempo(){
     setTimeout(function(){
-        document.getElementById('alerta').innerHTML = '';
+        document.getElementById('result').innerHTML = '';
     },2000);
 }
 
 function validar() {
    if(nombre.value == '' || apellido.value == '' || usuario.value == '' || telefono.value == '' || correo.value == '' || contrasena.value == '' || re_contrasena.value == '') {
-       document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'Por favor complete todos los campos '});
+       document.getElementById('result'). innerHTML = render({type: 'danger', body: 'Por favor complete todos los campos '});
         tiempo();
         return false;
 
    } else if(!expresion.test(correo.value)){
-        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'El correo ingresado no es valido'});
+        document.getElementById('result'). innerHTML = render({type: 'danger', body: 'El correo ingresado no es valido'});
        $('#correo').val('');
        tiempo(); 
        return false;  
             
 
    } else if(!passExp.test(contrasena.value)){
-       document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'La contraseña ingresada no es válida'});
+       document.getElementById('result'). innerHTML = render({type: 'danger', body: 'La contraseña ingresada no es válida'});
         $(':password').val('');
          tiempo();
          return false;
          
    } else if(contrasena.value != re_contrasena.value) {
-       document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'Las contraseñas no coinciden, por favor vuelva a intentar'});
+       document.getElementById('result'). innerHTML = render({type: 'danger', body: 'Las contraseñas no coinciden, por favor vuelva a intentar'});
         $(':password').val('');
         tiempo();
         return false;

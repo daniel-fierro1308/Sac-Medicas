@@ -1,9 +1,3 @@
-    function desaparecer(){
-        setTimeout(function(){
-            document.getElementById('result').innerHTML = "";
-        },2000);
-    }
-    
     $(document).ready(function(){            
             $('#enviar').click(function(){
                 var nombre, apellido, usuario, telefono, correo, contrasena, re_contrasena;
@@ -28,12 +22,12 @@
                             $('#enviar').html('Registrarme');
                             if(data){
                                 $('#result').html(data);
-                                desaparecer();
+                                tiempo();
                                 $('input').addClass('bien');
                                 $('input').val('');
                             } else {
                                 $("#result").html("<div class='alert alert-dismissible alert-danger'><strong>¡Error!</strong>No se ha podido registrar correctamente.</div>");
-                                desaparecer();
+                                tiempo();
                             }    
                         }, error:function(err){
                             $('#result').html(err);

@@ -32,8 +32,6 @@ if (isset($_SESSION["usuario"])) {
                 Registrate en la pagina ingresando al enlace anterior o dirigiendose a la sección REGISTRARSE del menú en la parte superior. 
             </div>
         </div>
-
-        <div id="alerta" align="center"></div>
         <div id="result" align="center"></div>
         <form method="post">
             <div class="row">

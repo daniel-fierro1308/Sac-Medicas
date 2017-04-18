@@ -1,9 +1,3 @@
-function ocultar(){
-  setTimeout(function(){
-     document.getElementById('result').innerHTML = '';
-    },2000);  
-}
-
   $(document).ready(function(){
     $('#login').click(function(){
       var usuario = $('#usuario').val();
@@ -24,7 +18,7 @@ function ocultar(){
             } else {
               $("#result").html("<div class='alert alert-dismissible alert-danger'><strong>¡Error!</strong> los datos son incorrectos.</div>");
               $('input').val('');
-              ocultar();
+             tiempo();
         }
           }
         });

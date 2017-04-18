@@ -28,7 +28,6 @@
                     Registrandote podras ingresar y posteriormente podras acceder a los servicios que ofrecemos y a las distintas funciones que se encuentran allí.</div>
             </div>
 
-    <div id="alerta" align="center"></div>
     <div id="result" align="center"></div>
     <form method="post">
     <div class="row">
