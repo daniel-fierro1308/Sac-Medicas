@@ -7,13 +7,13 @@ render = Handlebars.compile(template);
 
 function tiempo(){
     setTimeout(function(){
-        document.getElementById('alerta').innerHTML = "";
+        document.getElementById('result').innerHTML = "";
     },2000);
 }
 
 function validar_login() {
     if(usuario.value == '' || contrasena.value == ''){
-        document.getElementById('alerta').innerHTML = render({tipo: 'danger', body: 'Por favor complete los campos para iniciar sesion'});
+        document.getElementById('result').innerHTML = render({tipo: 'danger', body: 'Por favor complete los campos para iniciar sesion'});
         tiempo();
         return false;
     } 

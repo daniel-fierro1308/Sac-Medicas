@@ -19,18 +19,15 @@
         require('layout.php');
     ?>
     <div class="container">
-    <div class="jumbotron">
-  <h1 class="display-3 animated fadeInLeft">REGISTRO DE USUARIOS</h1>
-  <p class="lead more">Si no cuentas con un usuario registrado, te invitamos a que te registres ingresando tu información personal en el siguiente formulario.
-<br>
-Diligencia el formulario y asi posteriormente ingresar a la página.</p>
+        <div class="jumbotron">
+            <h1 class="display-3 animated fadeInLeft">REGISTRO DE USUARIOS</h1>
+            <a class="btn btn-success btn-lg" data-toggle="collapse" href="#leer" id="ver" aria-expanded="false" aria-controls="leer" role="button">Leer más</a>
+            <div class="lead collapse animated slideInLeft" id="leer" align="center">    
+                    Si no cuentas con un usuario registrado, te invitamos a que te registres ingresando tu información personal en el siguiente formulario.
+                    Diligencia el formulario y asi posteriormente ingresar a la página.
+                    Registrandote podras ingresar y posteriormente podras acceder a los servicios que ofrecemos y a las distintas funciones que se encuentran allí.</div>
+            </div>
 
-<p class="lead more">Registrandote podras ingresar y posteriormente podras acceder a los servicios que ofrecemos y a las distintas funciones que se encuentran allí.</p>
-  <p class="lead">
-    <a class="btn btn-success btn-lg" id="learn" href="#" id="leer" role="button">Leer más</a>
-  </p>
-</div>
-    <div id="alerta" align="center"></div>
     <div id="result" align="center"></div>
     <form method="post">
     <div class="row">
@@ -57,8 +54,8 @@ Diligencia el formulario y asi posteriormente ingresar a la página.</p>
         </div>
         <div class="col-md-6">
             <div class="form-group">
-                <label for="exampleInputEmail1">Correo</label>
-                <input type="text" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Correo" onblur="revisar(this); revisaremail();">
+                <label for="exampleInputEmail1">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="Usuario" onblur="revisar(this);">
             </div>
         </div>
     </div>
@@ -66,8 +63,8 @@ Diligencia el formulario y asi posteriormente ingresar a la página.</p>
      <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="exampleSelect1">Usuario</label>
-                <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="Usuario" onblur="revisar(this)">                
+                <label for="exampleSelect1">Correo</label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" onblur="revisar(this); revisaremail();">                
             </div>
         </div>
     </div>
@@ -91,8 +88,9 @@ Diligencia el formulario y asi posteriormente ingresar a la página.</p>
 </form>
 </div>
     <script src="../public/js/recursos/jquery.min.js"></script>
-    <script src="../public/js/registro.js"></script>
     <script src="../public/js/peticiones/registrar.js"></script>
+    <script src="../public/js/registro.js"></script>
+    
        <?php 
   require('footer.php');
 ?>

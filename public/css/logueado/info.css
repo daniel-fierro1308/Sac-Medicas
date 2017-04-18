@@ -1,5 +1,18 @@
-button {
-    margin: 2% 0 4% 0;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+#enviar {
+    margin-bottom: 2%;
+}
+
+#validar {
+    margin-bottom: 2%;
+}
+
+#validar_contras {
+    margin: 2% 0 2% 0;
 }
 
 .form-input, .error {
@@ -20,19 +33,13 @@ button {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-}
-
-
 .error {
     border: 1px solid red;
 }
 .form-input {
     border: 1px solid limegreen;
 }
+
 .bien {
     border: 1px solid rgba(0,0,0,.15);
-    background-color: #fff;
 }

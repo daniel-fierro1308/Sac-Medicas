@@ -1,15 +1,4 @@
-    function desaparecer(){
-        setTimeout(function(){
-            document.getElementById('result').innerHTML = "";
-        },2000);
-    }
-    
-    $(document).ready(function(){
-            $('.more').hide();
-            $('#learn').click(function(){
-                $('.more').toggle(1000);
-            });
-            
+    $(document).ready(function(){            
             $('#enviar').click(function(){
                 var nombre, apellido, usuario, telefono, correo, contrasena, re_contrasena;
                 nombre = $('#nombre').val();
@@ -27,15 +16,21 @@
                         data: {nombre:nombre, apellido:apellido, usuario:usuario, telefono:telefono, correo:correo, contrasena:contrasena, re_contrasena:re_contrasena},
                         cache: false,
                         beforeSend:function(){
-                            $('#enviar').val('Comprobando la informacion...');
+                            $('#enviar').html('Comprobando la informacion...');
                         }, 
                         success:function(data){
-                            $('#enviar').val('Registrarme');
+                            $('#enviar').html('Registrarme');
                             if(data){
                                 $('#result').html(data);
+                                tiempo();
+                                $('input').addClass('bien');
                                 $('input').val('');
-                                desaparecer();
-                            };    
+                            } else {
+                                $("#result").html("<div class='alert alert-dismissible alert-danger'><strong>¡Error!</strong>No se ha podido registrar correctamente.</div>");
+                                tiempo();
+                            }    
+                        }, error:function(err){
+                            $('#result').html(err);
                         }
                     });
                 }; 
