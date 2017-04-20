@@ -33,20 +33,19 @@
             </div>
         </div>
 
-        <div id="alerta" align="center"></div>
         <div id="result" align="center"></div>
         <form method="post">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Nombre(s):</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $datos['nombre']; ?>" placeholder="Nombre(s)" disabled>
+                <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $datos['nombre']; ?>" placeholder="Nombre(s)" disabled onblur="revisar(this)">
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Apellido(s):</label>
-                <input type="text" class="form-control" id="apellido" name="apellido" value="<?php echo $datos['apellido']; ?>" placeholder="Apellido(s)" disabled>
+                <input type="text" class="form-control" id="apellido" name="apellido" value="<?php echo $datos['apellido']; ?>" placeholder="Apellido(s)" disabled onblur="revisar(this)">
             </div>
         </div>
     </div>
@@ -105,8 +104,8 @@
 </form>
 </div>
 
-<script src="../public/js/peticiones/info.js"></script>
 <script src="../public/js/validar_info.js"></script>
+<script src="../public/js/peticiones/info.js"></script>
 <script src="../public/js/peticiones/cambio_contra.js"></script>
 
 <?php

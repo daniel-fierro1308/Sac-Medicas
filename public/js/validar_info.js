@@ -1,4 +1,7 @@
-var telefono, correo, contra, nueva_contra, repe_contra, exp_correo, exp_contra, template, render;
+var nombre, apellido, telefono, correo, contra, nueva_contra, repe_contra, exp_correo, exp_contra, template, render;
+
+nombre = document.getElementById('nombre');
+apellido = document.getElementById('apellido');
 telefono = document.getElementById('telefono');
 correo = document.getElementById('correo');
 contra = document.getElementById('antigua');
@@ -25,38 +28,38 @@ function revise_correo() {
     }
 } 
 
-function temporal(){
+function tiempo(){
     setTimeout(function(){
-        document.getElementById('alerta').innerHTML = "";
+        document.getElementById('result').innerHTML = "";
     },2000);
 }
 
 function validar_datos() {
-    if(telefono.value == '' || correo.value == ""){
-        document.getElementById('alerta').innerHTML = render({type: 'danger', body: 'Por favor complete todos los campos'});
-        temporal();
+    if(nombre.value == '' || apellido.value == '' || telefono.value == '' || correo.value == ""){
+        document.getElementById('result').innerHTML = render({type: 'danger', body: 'Por favor complete todos los campos'});
+        tiempo();
         return false;
     } else if(!exp_correo.test(correo.value)){
-        document.getElementById('alerta'). innerHTML = render({type: 'danger', body: 'El correo ingresado no es valido'});
+        document.getElementById('result'). innerHTML = render({type: 'danger', body: 'El correo ingresado no es valido'});
        $('#correo').val('');
-       temporal(); 
+       tiempo(); 
        return false;  
    }
 }
 
 function validar_contra() {
     if(contra.value == '' || nueva_contra.value == '' || repe_contra.value == ''){
-        document.getElementById('alerta').innerHTML = render({type: 'danger', body: 'Por favor complete los campos'});
-        temporal();
+        document.getElementById('result').innerHTML = render({type: 'danger', body: 'Por favor complete los campos'});
+        tiempo();
         return false;
     } else if(!exp_contra.test(nueva_contra.value)){
-        document.getElementById('alerta').innerHTML = render({type:'danger',body:'La nueva contraseña no es valida por favor intente nuevamente'});
-        temporal();
+        document.getElementById('result').innerHTML = render({type:'danger',body:'La nueva contraseña no es valida por favor intente nuevamente'});
+        tiempo();
         return false;
         $('.vacio').val('');
     } else if(nueva_contra.value != repe_contra.value) {
-        document.getElementById('alerta').innerHTML = render({type: 'danger', body: 'Las contraseñas ingresadas no coinciden'});
-        temporal();
+        document.getElementById('result').innerHTML = render({type: 'danger', body: 'Las contraseñas ingresadas no coinciden'});
+        tiempo();
         $('.vacio').val('');
         return false;
     }

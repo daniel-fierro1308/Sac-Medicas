@@ -15,17 +15,14 @@
     if ($data > 0) {
       $alerta .= " El nombre de usuario ya esta registrado";
     }
-      // if (ereg("^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@+([_a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]{2,200}\.[a-zA-Z]{2,6}$", $correo)){
+      
            $sql = "SELECT * FROM usuarios WHERE correo ='$correo'";
       $res = mysqli_query($con, $sql);
       $data = mysqli_fetch_array($res);
       if ($data > 0) {
         $alerta .= " El correo ingresado ya está registrado";
       }
-      // } else {
-      //   $alerta.= "El correo ingresado no es valido";
-      // }           
-
+      
   if ($alerta != "") {
     echo "<div class='alert alert-dismissible alert-danger'><strong>Error </strong>$alerta </div>";
   } else {

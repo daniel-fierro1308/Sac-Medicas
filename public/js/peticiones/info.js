@@ -1,13 +1,7 @@
-function tiempo(){
-    setTimeout(function(){
-        document.getElementById('result').innerHTML = "";
-    },2000);
-}
-
 $(document).ready(function(){
     $('#cancelar, #validar').hide();
     $('#enviar').click(function(){
-        $('#telefono, #correo').prop('disabled',false);
+        $('#nombre, #apellido ,#telefono, #correo').prop('disabled',false);
         $('#enviar').hide();
         $('#validar, #cancelar').show();
     });
@@ -27,14 +21,16 @@ $(document).ready(function(){
    });
 
    $('#validar').click(function(){
-    var telefono, correo, usuario;
+    var nombre, apellido, telefono, correo;
+    nombre = $('#nombre').val();
+    apellido = $('#apellido').val();
     telefono = $('#telefono').val();
     correo = $('#correo').val();
-    if($.trim(telefono).length > 0 && $.trim(correo).length > 0){
+    if($.trim(nombre).length > 0 && $.trim(apellido).length > 0 && $.trim(telefono).length > 0 && $.trim(correo).length > 0){
      $.ajax({
        url: './controladores/modificar_info.php',
        method: 'POST',
-       data: {telefono:telefono, correo:correo},
+       data: {nombre:nombre, telefono:telefono, correo:correo},
        cache: false,
        beforeSend: function(){
            $('#validar').html('Validando...');
@@ -44,12 +40,12 @@ $(document).ready(function(){
             if(data){
                 $('#result').html(data);
                 tiempo();
-                $('#telefono, #correo').prop('disabled',true);
+                $('#nombre, #apellido, #telefono, #correo').prop('disabled',true);
                  $('#telefono, #correo').addClass('bien');
                 $('#validar, #cancelar').hide();
                  $('#enviar').show();
             } else {
-                $("#result").html("<div class='alert alert-dismissible alert-danger'><strong>¡Error!</strong>No se ha podido registrar correctamente.</div>");
+                $("#result").html("<div class='alert alert-dismissible alert-danger'><strong>¡Error!</strong>No se ha podido actualizar la información correctamente.</div>");
               }    
        },error:function(err){
           $('#result').html(err);
