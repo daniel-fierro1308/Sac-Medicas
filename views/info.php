@@ -35,7 +35,7 @@
 
         <div id="result" align="center"></div>
         <form method="post">
-    <div class="row">
+    <div class="row" align="center">
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Nombre(s):</label>
@@ -49,7 +49,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" align="center">
     <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail1">Telefono</label>
@@ -64,8 +64,8 @@
         </div>
     </div>
 
-     <div class="row">
-        <div class="col-md-12">
+     <div class="row" align="center">
+        <div class="col-md-12" align="center">
             <div class="form-group">
                 <label for="exampleSelect1">Nombre de Usuario</label>
                 <input type="text" class="form-control" id="user" name="user" placeholder="Usuario" value="<?php echo $datos['usuario']; ?>" disabled onblur="revisar(this)">                

@@ -30,7 +30,7 @@ $(document).ready(function(){
      $.ajax({
        url: './controladores/modificar_info.php',
        method: 'POST',
-       data: {nombre:nombre, telefono:telefono, correo:correo},
+       data: {nombre:nombre, apellido:apellido, telefono:telefono, correo:correo},
        cache: false,
        beforeSend: function(){
            $('#validar').html('Validando...');
@@ -41,7 +41,7 @@ $(document).ready(function(){
                 $('#result').html(data);
                 tiempo();
                 $('#nombre, #apellido, #telefono, #correo').prop('disabled',true);
-                 $('#telefono, #correo').addClass('bien');
+                 $('#nombre,#apellido,#telefono, #correo').addClass('bien');
                 $('#validar, #cancelar').hide();
                  $('#enviar').show();
             } else {

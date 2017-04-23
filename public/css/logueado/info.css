@@ -3,6 +3,10 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
+input {
+    text-align: center;
+}
+
 #enviar {
     margin-bottom: 2%;
 }
