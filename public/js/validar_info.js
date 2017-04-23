@@ -31,6 +31,7 @@ function revise_correo() {
 function tiempo(){
     setTimeout(function(){
         document.getElementById('result').innerHTML = "";
+        document.getElementById('result_contra').innerHTML = "";
     },2000);
 }
 
@@ -49,16 +50,16 @@ function validar_datos() {
 
 function validar_contra() {
     if(contra.value == '' || nueva_contra.value == '' || repe_contra.value == ''){
-        document.getElementById('result').innerHTML = render({type: 'danger', body: 'Por favor complete los campos'});
+        document.getElementById('result_contra').innerHTML = render({type: 'danger', body: 'Por favor complete los campos'});
         tiempo();
         return false;
     } else if(!exp_contra.test(nueva_contra.value)){
-        document.getElementById('result').innerHTML = render({type:'danger',body:'La nueva contraseña no es valida por favor intente nuevamente'});
+        document.getElementById('result_contra').innerHTML = render({type:'danger',body:'La nueva contraseña no es valida por favor intente nuevamente'});
         tiempo();
+         $('.vacio').val('');
         return false;
-        $('.vacio').val('');
     } else if(nueva_contra.value != repe_contra.value) {
-        document.getElementById('result').innerHTML = render({type: 'danger', body: 'Las contraseñas ingresadas no coinciden'});
+        document.getElementById('result_contra').innerHTML = render({type: 'danger', body: 'Las contraseñas ingresadas no coinciden'});
         tiempo();
         $('.vacio').val('');
         return false;

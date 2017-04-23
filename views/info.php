@@ -81,7 +81,7 @@
             <button type="button" class="btn btn-danger" id="cancelar" role="button" name="cancelar">Cancelar</button>
         </div>
     </div>
-
+        <div id="result_contra" align="center"></div>
     <div class="form-check">
     <label class="form-check-label">
       <input type="checkbox" class="form-check-input" id="cambio">
@@ -104,10 +104,9 @@
 </form>
 </div>
 
-<script src="../public/js/validar_info.js"></script>
 <script src="../public/js/peticiones/info.js"></script>
-<script src="../public/js/peticiones/cambio_contra.js"></script>
-
+<script src="../public/js/peticiones/modificar_contra.js"></script>
+<script src="../public/js/validar_info.js"></script>
 <?php
     require('footer.php');
 ?>

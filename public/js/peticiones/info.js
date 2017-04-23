@@ -10,16 +10,6 @@ $(document).ready(function(){
         $(location).attr('href','info.php');
     });
 
-    $('.cambiar').hide();
-
-   $('#cambio').on('change', function(){
-        if($(this).is(':checked') ){
-           $('.cambiar').show(); 
-        } else {
-             $('.cambiar').hide();
-        }
-   });
-
    $('#validar').click(function(){
     var nombre, apellido, telefono, correo;
     nombre = $('#nombre').val();
