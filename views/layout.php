@@ -35,10 +35,7 @@
         <a class="nav-link active" href="index_log.php">INICIO<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">MIS VIDEOS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">MIS IMAGENES</a>
+        <a class="nav-link active" href="imagenes.php">MIS IMAGENES</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="info.php">MI INFORMACION</a>
