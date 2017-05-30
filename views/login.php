@@ -44,7 +44,11 @@ if (isset($_SESSION["usuario"])) {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="exampleInputPassword1">Contraseña</label>
+                        
                         <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña">
+                        <span class="icon-eye" id="mostrar" role="button"></span>
+                        <span class="icon-eye-blocked" id="ocultar" role="button"></span>
+                        
                     </div>
                 </div>
         </div>
@@ -59,6 +63,7 @@ if (isset($_SESSION["usuario"])) {
 <script src="../public/js/recursos/jquery.min.js"></script>
 <script src="../public/js/login.js"></script>
 <script src="../public/js/peticiones/loguear.js"></script>
+<script src="../public/js/peticiones/mostrar_contra.js"></script>
   <?php 
   require('footer.php');
 ?>
