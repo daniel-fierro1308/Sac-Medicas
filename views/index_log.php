@@ -21,7 +21,7 @@ $row= mysqli_fetch_array($resultado);
 
 <div class="row bienvenida">
   <div class="col-md-12"> 
-    <strong><a href="info.php"><?php echo $row['nombre']; ?>   <?php echo $row['apellido'];?></a></strong>
+    <strong><a href="info.php"><?php echo $row['nombre'];?> <?php echo $row['apellido'];?></a></strong>
   </div>
 </div>
 

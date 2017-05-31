@@ -8,7 +8,7 @@ $(document).ready(function(){
              $('.cambiar').hide();
         }
    });
-
+   
    $('#validar_contras').click(function(){
         var antigua,nueva, repetir;
         antigua = $('#antigua').val();
