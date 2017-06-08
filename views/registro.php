@@ -19,18 +19,15 @@
         require('layout.php');
     ?>
     <div class="container">
-    <div class="jumbotron">
-  <h1 class="display-3 animated fadeInLeft">REGISTRO DE USUARIOS</h1>
-  <p class="lead more">Si usted no cuenta con un usuario registrado, lo invitamos a que se registre ingresando su información personal en el siguiente formulario.
-<br>
-Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
+        <div class="jumbotron">
+            <h1 class="display-3 animated fadeInLeft">REGISTRO DE USUARIOS</h1>
+            <a class="btn btn-success btn-lg" data-toggle="collapse" href="#leer" id="ver" aria-expanded="false" aria-controls="leer" role="button">Leer más</a>
+            <div class="lead collapse animated slideInLeft" id="leer" align="center">    
+                    Si no cuentas con un usuario registrado, te invitamos a que te registres ingresando tu información personal en el siguiente formulario.
+                    Diligencia el formulario y asi posteriormente ingresar a la página.
+                    Registrandote podras ingresar y posteriormente podras acceder a los servicios que ofrecemos y a las distintas funciones que se encuentran allí.</div>
+            </div>
 
-<p class="lead more">Registrandose en la pagina podra ingresar a ella y posteriormente podra solicitar su cita médica y llevar a cabo las distintas funciones que se encuentran allí.</p>
-  <p class="lead">
-    <a class="btn btn-success btn-lg" id="learn" href="#" id="leer" role="button">Leer más</a>
-  </p>
-</div>
-    <div id="alerta" align="center"></div>
     <div id="result" align="center"></div>
     <form method="post">
     <div class="row">
@@ -48,24 +45,6 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="exampleSelect1">Tipo de documento</label>
-                <select class="form-control" id="tipo_documento" name="tipo_documento">
-                    <option value="Tarjeta de identidad">Tarjeta de identidad</option>
-                    <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
-                </select>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="exampleSelect1">Numero de documento</label>
-                <input type="number" class="form-control" id="documento" name="documento" aria-describedby="emailHelp" placeholder="Número de Documento" onblur="revisar(this)">                
-            </div>
-        </div>
-    </div>
     <div class="row">
     <div class="col-md-6">
             <div class="form-group">
@@ -75,11 +54,21 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
         </div>
         <div class="col-md-6">
             <div class="form-group">
-                <label for="exampleInputEmail1">Correo</label>
-                <input type="text" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Correo" onblur="revisar(this); revisaremail();">
+                <label for="exampleInputEmail1">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp" placeholder="Usuario" onblur="revisar(this);">
             </div>
         </div>
     </div>
+
+     <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="exampleSelect1">Correo</label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" onblur="revisar(this); revisaremail();">                
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
@@ -98,10 +87,12 @@ Diligencie el formulario y asi posteriormente ingresar a la p&aacute;gina.</p>
   <small id="emailHelp" class="form-text text-muted">¿Ya tienes una cuenta? <a href="login.php">Entra aquí</a></small>
 </form>
 </div>
-
     <script src="../public/js/recursos/jquery.min.js"></script>
-    <script src="../public/js/handlebars.js"></script>
-    <script src="../public/js/registro.js"></script>
     <script src="../public/js/peticiones/registrar.js"></script>
+    <script src="../public/js/registro.js"></script>
+    
+       <?php 
+  require('footer.php');
+?>
 </body>
 </html>

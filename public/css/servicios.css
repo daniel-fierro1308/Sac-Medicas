@@ -1,0 +1,45 @@
+.division {
+    margin-top: 3%;
+}
+
+.banner {
+    height: 100%;
+    width: 100%;
+    margin: -2.8% 0 .1% 0;
+}
+
+.titulos {
+    color: #fff;
+    text-align: center;
+}
+.parrafos {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.reproductor {
+    background-color: #1F2638;
+	margin:0.1% 0 .1% 0;
+}
+
+.reproductor p {
+    margin: 7% 5% 3% auto;
+}    
+
+.imagenes {
+    width: 45%;
+    margin: 2% 0 2% 22%;
+}
+
+.imagen p {
+    margin: 7% auto 3% 5%;
+}
+
+.contacto{
+    background-color: #1C3A4D;
+    margin: 0.1% 0 .2% 0;
+}
+.contacto p {
+    margin: 3% 7% 3% auto;
+}

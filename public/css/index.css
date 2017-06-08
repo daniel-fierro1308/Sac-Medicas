@@ -1,27 +1,25 @@
-body {
-    margin: 0 0 10% 0;
-    
-}
 .boton {
     margin: 0 0 0 10%;
 }
 
-h1 {
-text-align: center;
-color: #069;  
-}
 .slider {
-    width: 93%;
+    width: 95%;
+    margin: -5% auto 0 auto;
     height: 80%;
-    margin: 0 auto 5% auto; 
 }
 
 .slider .image {
-    height: 500px;
-    width: 1200px;
+    width: 90%;
+    margin: auto;
+    height: 70%;
 }
+
+.slider .indicador {
+    width: 20%;
+}
+
 .content {
-    margin: 4% 0 2% 0;
+    margin: 0 0 2% 0;
 }
 .intro {
     font-size: 20px;
@@ -32,8 +30,24 @@ color: #069;
 .imagen {
     width: 55%;
     height: 55%;
+    margin-bottom: 3%;
 }
 
 .imagen:hover {
     cursor: pointer;
+}
+.logueate {
+    background-color: #1C3A4D;
+}
+
+.logueate h5{
+    color: #fff;
+    width: 100%;
+}
+.logueate a {
+    color: #fff;
+}
+.logueate a:hover {
+    text-decoration: none;
+    color: #fff;
 }

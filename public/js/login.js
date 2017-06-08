@@ -1,19 +1,19 @@
-var documento, contrasena, template, render;
+var usuario, contrasena, template, render;
 
-documento = document.getElementById('documento');
+usuario = document.getElementById('usuario');
 contrasena = document.getElementById('contrasena');
 template = document.getElementById('mensaje').innerHTML;
 render = Handlebars.compile(template);
 
 function tiempo(){
     setTimeout(function(){
-        document.getElementById('alerta').innerHTML = "";
+        document.getElementById('result').innerHTML = "";
     },2000);
 }
 
 function validar_login() {
-    if(documento.value == '' || contrasena.value == ''){
-        document.getElementById('alerta').innerHTML = render({tipo: 'danger', body: 'Por favor complete los campos para iniciar sesion'});
+    if(usuario.value == '' || contrasena.value == ''){
+        document.getElementById('result').innerHTML = render({tipo: 'danger', body: 'Por favor complete los campos para iniciar sesion'});
         tiempo();
         return false;
     } 
